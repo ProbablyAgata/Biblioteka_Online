@@ -1,0 +1,83 @@
+@{
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    ViewData["Title"] = "Panel administratora";
+}
+
+<div class="welcome-container" style="text-align: center; margin-bottom: 2rem;">
+    <h2 class="mb-4" style="font-size: 2rem;">🧙‍♂️ Panel administratora</h2>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-4">
+        <div class="card" style="border-radius: 15px; background: linear-gradient(135deg,#d2ecf3, #5aa6ff); color: white; padding: 1.5rem; text-align: center; box-shadow: 0 6px 16px rgba(66, 135, 245, 0.15);">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Aktywne wypożyczenia</h3>
+            <p style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0;">@ViewBag.ActiveBorrowings</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card" style="border-radius: 15px; background: linear-gradient(135deg, #d2ecf3, #4ecdc4); color: white; padding: 1.5rem; text-align: center; box-shadow: 0 6px 16px rgba(66, 135, 245, 0.15);">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📖</div>
+            <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Liczba książek</h3>
+            <p style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0;">@ViewBag.TotalBooks</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <a href="/Borrowings/Create" class="card" style="display: block; text-decoration: none; border-radius: 15px; background: linear-gradient(135deg, #4287f5, #5aa6ff); color: white; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 600; padding: 1.5rem; text-align: center; box-shadow: 0 6px 16px rgba(66, 135, 245, 0.15); transition: transform 0.3s ease;">
+            <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">➕</div>
+            <span>Dodaj nowe wypożyczenie</span>
+        </a>
+    </div>
+</div>
+
+<div class="card" style="border-radius: 20px; box-shadow: 0 4px 15px rgba(66, 135, 245, 0.1); padding: 1.5rem; margin-bottom: 2rem; border: 2px dashed #5aa6ff;">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3 style="color: #4287f5; font-size: 1.5rem; margin-bottom: 0; display: flex; align-items: center;">
+            <span class="cute-icon">📋</span> Ostatnie wypożyczenia
+        </h3>
+        <a href="/Borrowings/AdminPanel" class="btn" style="background: linear-gradient(90deg, #5aa6ff 0%, #0056b3 100%); color: white; border-radius: 25px; padding: 8px 18px; display: inline-flex; align-items: center; gap: 6px;">
+            <span>Panel wypożyczeń</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg>
+        </a>
+    </div>
+    
+    @if (ViewBag.RecentBorrowings != null && ViewBag.RecentBorrowings.Count > 0)
+    {
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Użytkownik</th>
+                        <th>Książka</th>
+                        <th>Data wypożyczenia</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewBag.RecentBorrowings)
+                    {
+                        <tr>
+                            <td><span style="font-size: 1rem; margin-right: 5px;">👤</span> @(item.User?.Email ?? "Brak użytkownika")</td>
+                            <td><span style="font-size: 1rem; margin-right: 5px;">📕</span> <strong>@(item.Book?.Title ?? "Brak tytułu")</strong></td>
+                            <td>@item.BorrowDate.ToShortDateString()</td>
+                            <td>
+                                <span class="badge @(item.Returned ? "bg-success" : "bg-primary")" style="padding: 6px 12px; border-radius: 20px;">
+                                    @(item.Returned ? "Zwrócono ✓" : "Wypożyczona")
+                                </span>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="empty-state" style="text-align: center; padding: 3rem 0;">
+            <div style="font-size: 3.5rem; margin-bottom: 1rem;">📚</div>
+            <p style="color: #7a7a7a; font-size: 1.2rem;">Brak wypożyczeń w systemie.</p>
+        </div>
+    }
+</div> 

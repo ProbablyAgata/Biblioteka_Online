@@ -1,0 +1,34 @@
+@model BibliotekaOnline.Models.Borrowing
+@{
+    ViewData["Title"] = "Dodaj wypożyczenie";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2 class="mb-4">Dodaj wypożyczenie</h2>
+
+<form method="post" class="mt-4">
+    <div class="form-group mb-4">
+        <label class="form-label">Użytkownik</label>
+        <select name="UserId" class="form-control" style="border-radius: 12px; border-color: #ffe0f7;">
+            @foreach (var user in ViewBag.Users)
+            {
+                <option value="@user.Id">@user.Email</option>
+            }
+        </select>
+    </div>
+    <div class="form-group mb-4">
+        <label class="form-label">Książka</label>
+        <select name="BookId" class="form-control" style="border-radius: 12px; border-color: #ffe0f7;">
+            @foreach (var book in ViewBag.Books)
+            {
+                <option value="@book.Id">@book.Title</option>
+            }
+        </select>
+    </div>
+    <div class="form-group mb-4">
+        <label class="form-label">Data zwrotu</label>
+        <input type="date" name="ReturnDate" class="form-control" style="border-radius: 12px; border-color: #ffe0f7;" />
+    </div>
+    <button type="submit" class="btn" style="background-color: #a259c6; color: white; border-radius: 20px; padding: 8px 24px; font-weight: 600;">Dodaj</button>
+    <a href="/Borrowings/AdminPanel" class="btn btn-outline-secondary" style="border-radius: 20px; padding: 8px 24px; margin-left: 10px;">Anuluj</a>
+</form>

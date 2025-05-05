@@ -1,0 +1,37 @@
+@model IEnumerable<BibliotekaOnline.Models.Book>
+
+<h2>Książki dostępne w bibliotece</h2>
+<table class="table">
+    <thead>
+        <tr><th>Tytuł</th><th>Autor</th><th>Dostępnych sztuk</th></tr>
+    </thead>
+    <tbody>
+    @foreach (var book in Model)
+    {
+        <tr>
+            <td>@book.Title</td>
+            <td>@book.Author</td>
+            <td>@book.TotalCopies</td>
+        </tr>
+    }
+    </tbody>
+</table><form method="get" class="mb-3">
+    <input type="text" name="search" class="form-control" placeholder="Szukaj książki lub autora..." value="@ViewBag.Search" />
+</form>
+
+<h2>Książki dostępne w bibliotece</h2>
+<table class="table">
+    <thead>
+        <tr><th>Tytuł</th><th>Autor</th><th>Dostępnych sztuk</th></tr>
+    </thead>
+    <tbody>
+    @foreach (var book in Model)
+    {
+        <tr>
+            <td>@book.Title</td>
+            <td>@book.Author</td>
+            <td>@book.TotalCopies</td>
+        </tr>
+    }
+    </tbody>
+</table>

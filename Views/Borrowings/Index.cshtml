@@ -1,0 +1,33 @@
+@model IEnumerable<BibliotekaOnline.Models.Borrowing>
+@{
+    ViewData["Title"] = "Moje wypożyczenia";
+    Layout = "~/Views/Shared/UserLayout.cshtml";
+}
+
+<h2 class="mb-4">Moje wypożyczenia</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tytuł książki</th>
+            <th>Data wypożyczenia</th>
+            <th>Data zwrotu</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Book?.Title</td>
+            <td>@item.BorrowDate.ToShortDateString()</td>
+            <td>@(item.ReturnDate != null ? item.ReturnDate.Value.ToShortDateString() : "")</td>
+            <td>
+                <span class="badge @(item.Returned ? "bg-success" : "bg-primary")" style="padding: 8px 12px; border-radius: 12px;">
+                    @(item.Returned ? "Zwrócono" : "Wypożyczona")
+                </span>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<a href="/Borrowings/Archive" class="btn" style="background-color: #a259c6; color: white; border-radius: 20px; padding: 8px 16px; font-weight: 600;">Zobacz archiwum</a>

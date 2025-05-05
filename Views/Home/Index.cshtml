@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Biblioteka Online";
+}
+
+<div class="homepage-container" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;">
+    <div class="cute-animation" style="margin-bottom:2rem; position:relative;">
+        <div style="position:absolute; top:-30px; left:-20px; font-size:2rem;" class="floating-star">✨</div>
+        <svg width="140" height="140" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="animated-book">
+            <rect x="20" y="30" width="80" height="60" rx="12" fill="#e0f0ff" stroke="#4287f5" stroke-width="3"/>
+            <rect x="30" y="40" width="60" height="40" rx="8" fill="#fff" stroke="#5aa6ff" stroke-width="2"/>
+            <rect x="40" y="50" width="40" height="20" rx="4" fill="#f8fafc" stroke="#4287f5" stroke-width="1.5"/>
+            <path d="M30 40 Q60 70 90 40" stroke="#5aa6ff" stroke-width="2" fill="none"/>
+            <circle cx="85" cy="35" r="8" fill="#4ecdc4" opacity="0.7"/>
+        </svg>
+        <div style="position:absolute; bottom:-15px; right:-15px; font-size:2rem;" class="floating-star-delayed">⭐</div>
+    </div>
+    <h1 style="font-size:2.5rem; color:#4287f5; font-weight:700; margin-bottom:0.5rem; text-align:center;">Witamy w Bibliotece Online!</h1>
+    <p style="font-size:1.2rem; color:#5a7d9a; margin-bottom:2rem; text-align:center; max-width:600px;">Odkrywaj, wypożyczaj i zarządzaj książkami w nowoczesny, przyjazny sposób.</p>
+    <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+        <a href="/Account/Login" class="btn" style="font-size:1.1rem; background: linear-gradient(90deg, #4287f5 0%, #0056b3 100%); border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
+            <span style="position:relative; z-index:2;">Zaloguj się</span>
+        </a>
+        <a href="/Account/Register" class="btn btn-outline" style="font-size:1.1rem; background:#fff; color:#4287f5; border:2px solid #4287f5; border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
+            <span style="position:relative; z-index:2;">Zarejestruj się</span>
+        </a>
+    </div>
+</div>
