@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\Biblioteka_online.csproj": {}
+    "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\Biblioteka_online.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\Biblioteka_online.csproj": {
+    "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\Biblioteka_online.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\Biblioteka_online.csproj",
+        "projectUniqueName": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\Biblioteka_online.csproj",
         "projectName": "Biblioteka_online",
-        "projectPath": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\Biblioteka_online.csproj",
+        "projectPath": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\Biblioteka_online.csproj",
         "packagesPath": "C:\\Users\\Agata\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\",
+        "outputPath": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Agata\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -16,12 +16,27 @@
     </div>
     <h1 style="font-size:2.5rem; color:#4287f5; font-weight:700; margin-bottom:0.5rem; text-align:center;">Witamy w Bibliotece Online!</h1>
     <p style="font-size:1.2rem; color:#5a7d9a; margin-bottom:2rem; text-align:center; max-width:600px;">Odkrywaj, wypożyczaj i zarządzaj książkami w nowoczesny, przyjazny sposób.</p>
-    <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
-        <a href="/Account/Login" class="btn" style="font-size:1.1rem; background: linear-gradient(90deg, #4287f5 0%, #0056b3 100%); border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
-            <span style="position:relative; z-index:2;">Zaloguj się</span>
-        </a>
-        <a href="/Account/Register" class="btn btn-outline" style="font-size:1.1rem; background:#fff; color:#4287f5; border:2px solid #4287f5; border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
-            <span style="position:relative; z-index:2;">Zarejestruj się</span>
-        </a>
-    </div>
+    
+    @if (User.Identity != null && User.Identity.IsAuthenticated)
+    {
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+            <a asp-controller="Books" asp-action="Index" class="btn" style="font-size:1.1rem; background: linear-gradient(90deg, #4287f5 0%, #0056b3 100%); border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
+                <span style="position:relative; z-index:2;">Przeglądaj katalog</span>
+            </a>
+            <a asp-controller="Borrowings" asp-action="Index" class="btn btn-outline" style="font-size:1.1rem; background:#fff; color:#4287f5; border:2px solid #4287f5; border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
+                <span style="position:relative; z-index:2;">Moje wypożyczenia</span>
+            </a>
+        </div>
+    }
+    else
+    {
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
+            <a asp-controller="Account" asp-action="Login" class="btn" style="font-size:1.1rem; background: linear-gradient(90deg, #4287f5 0%, #0056b3 100%); border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
+                <span style="position:relative; z-index:2;">Zaloguj się</span>
+            </a>
+            <a asp-controller="Account" asp-action="Register" class="btn btn-outline" style="font-size:1.1rem; background:#fff; color:#4287f5; border:2px solid #4287f5; border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
+                <span style="position:relative; z-index:2;">Zarejestruj się</span>
+            </a>
+        </div>
+    }
 </div>

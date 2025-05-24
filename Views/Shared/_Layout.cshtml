@@ -26,13 +26,21 @@
                                 <span style="font-size: 1rem; margin-right: 5px;">🏠</span> Strona główna
                             </a>
                         </li>
+                        
                         @if (User.Identity != null && User.Identity.IsAuthenticated)
                         {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Books" asp-action="Index" style="color: #4287f5; font-weight: 600; display: flex; align-items: center;">
+                                    <span style="font-size: 1rem; margin-right: 5px;">📖</span> Katalog
+                                </a>
+                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Borrowings" asp-action="Index" style="color: #4287f5; font-weight: 600; display: flex; align-items: center;">
                                     <span style="font-size: 1rem; margin-right: 5px;">📋</span> Moje wypożyczenia
                                 </a>
                             </li>
+                            
                             @if (User.IsInRole("Admin"))
                             {
                                 <li class="nav-item">
@@ -40,17 +48,22 @@
                                         <span style="font-size: 1rem; margin-right: 5px;">⚙️</span> Panel administratora
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Books" asp-action="GoogleBooksSearch" style="color: #4287f5; font-weight: 600; display: flex; align-items: center;">
+                                        <span style="font-size: 1rem; margin-right: 5px;">🔍</span> Google Books
+                                    </a>
+                                </li>
                             }
                         }
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Account" asp-action="Login" style="color: #4287f5; font-weight: 600; display: flex; align-items: center;">
+                                <a class="nav-link" asp-area="Identity" asp-page="/Account/Login" style="color: #4287f5; font-weight: 600; display: flex; align-items: center;">
                                     <span style="font-size: 1rem; margin-right: 5px;">🔑</span> Zaloguj się
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Account" asp-action="Register" style="color: #4287f5; font-weight: 600; display: flex; align-items: center;">
+                                <a class="nav-link" asp-area="Identity" asp-page="/Account/Register" style="color: #4287f5; font-weight: 600; display: flex; align-items: center;">
                                     <span style="font-size: 1rem; margin-right: 5px;">✏️</span> Zarejestruj się
                                 </a>
                             </li>
@@ -58,8 +71,8 @@
                     </ul>
                     @if (User.Identity != null && User.Identity.IsAuthenticated)
                     {
-                        <form asp-controller="Account" asp-action="Logout" method="post" class="ms-auto">
-                            <button type="submit" class="btn-logout" style="display: flex; align-items: center;">
+                        <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post">
+                            <button type="submit" class="btn-logout" style="display: flex; align-items: center; background: none; border: none; color: #4287f5; font-weight: 600;">
                                 <span style="font-size: 1rem; margin-right: 5px;">🚪</span> Wyloguj się
                             </button>
                         </form>

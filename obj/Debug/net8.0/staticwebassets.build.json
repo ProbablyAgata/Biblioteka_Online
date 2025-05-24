@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l/CQLMfDifdkPjAIfyP3JObEmVk/qVF7TP4xFUp1ssU=",
+  "Hash": "UF9H/A6ykQvjRHCpJarZT+Si0nflc7XeLYd1Buyj9mc=",
   "Source": "Biblioteka_online",
   "BasePath": "_content/Biblioteka_online",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "Biblioteka_online\\wwwroot",
       "Source": "Biblioteka_online",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "Pattern": "**"
     }
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "C:\\Users\\Agata\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.2\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "Biblioteka_online#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
@@ -1295,13 +1295,13 @@
       "Integrity": "1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "Biblioteka_online#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
@@ -1316,13 +1316,13 @@
       "Integrity": "1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\css\\site.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\favicon.ico",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\js\\site.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1697,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1718,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1739,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1760,10 +1760,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1781,10 +1781,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1823,10 +1823,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1844,10 +1844,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1865,10 +1865,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1886,10 +1886,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1907,10 +1907,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1928,10 +1928,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1949,10 +1949,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -1970,10 +1970,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1991,10 +1991,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -2033,10 +2033,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2054,10 +2054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2075,10 +2075,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2096,10 +2096,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2117,10 +2117,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2138,10 +2138,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2159,10 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2180,10 +2180,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2201,10 +2201,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2222,10 +2222,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2243,10 +2243,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2264,10 +2264,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2285,10 +2285,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2306,10 +2306,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/bootstrap/LICENSE#[.{fingerprint}]?",
       "AssetKind": "All",
@@ -2327,10 +2327,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2348,10 +2348,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2369,10 +2369,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -2390,10 +2390,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2411,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2432,10 +2432,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2453,10 +2453,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2474,10 +2474,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -2495,10 +2495,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2516,10 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2537,10 +2537,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2558,10 +2558,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery/dist/jquery.slim#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2579,10 +2579,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -2600,10 +2600,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -2621,10 +2621,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Identity": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Biblioteka_online",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\",
       "BasePath": "_content/Biblioteka_online",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -2645,7 +2645,7 @@
   "Endpoints": [
     {
       "Route": "Biblioteka_online.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2682,7 +2682,7 @@
     },
     {
       "Route": "Biblioteka_online.jajugxsi6m.bundle.scp.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2727,7 +2727,7 @@
     },
     {
       "Route": "Biblioteka_online.jajugxsi6m.styles.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2772,7 +2772,7 @@
     },
     {
       "Route": "Biblioteka_online.styles.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2809,7 +2809,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +2846,7 @@
     },
     {
       "Route": "css/site.kw8vjoccbd.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2891,7 +2891,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2936,7 +2936,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5193,7 +5193,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5230,7 +5230,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5275,7 +5275,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.bqjiyaj88i.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5320,7 +5320,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5357,7 +5357,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.c2jlpeoesf.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5402,7 +5402,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5439,7 +5439,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5476,7 +5476,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.aexeepp0ev.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5521,7 +5521,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5558,7 +5558,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.min.erw9l3u2r3.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5603,7 +5603,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5640,7 +5640,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.ausgxo2sd3.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5685,7 +5685,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5722,7 +5722,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.d7shbmvgxk.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5767,7 +5767,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5804,7 +5804,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.cosvhxvwiu.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5849,7 +5849,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5886,7 +5886,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.k8d9w2qqmf.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5931,7 +5931,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5968,7 +5968,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.fvhpjtyr6v.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6013,7 +6013,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6050,7 +6050,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.b7pk76d08c.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6095,7 +6095,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6132,7 +6132,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.fsbi9cje9m.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6177,7 +6177,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6214,7 +6214,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6251,7 +6251,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.ee0r1s7dh0.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6296,7 +6296,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6333,7 +6333,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6370,7 +6370,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.jd9uben2k1.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6415,7 +6415,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6452,7 +6452,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.dxx9fxp4il.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6497,7 +6497,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.rzd6atqjts.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6542,7 +6542,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-reboot.ub07r2b239.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6587,7 +6587,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6624,7 +6624,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6661,7 +6661,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.css.r4e9w2rdcm.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6706,7 +6706,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.khv3u5hwcm.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6751,7 +6751,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6788,7 +6788,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.c2oey78nd0.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6833,7 +6833,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6870,7 +6870,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.min.lcd1t2u6c8.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6915,7 +6915,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6952,7 +6952,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.j5mq2jizvt.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6997,7 +6997,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7034,7 +7034,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.06098lyss8.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7079,7 +7079,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7116,7 +7116,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7153,7 +7153,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.nvvlpmu67g.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7198,7 +7198,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.tdbxkamptv.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7243,7 +7243,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7280,7 +7280,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7317,7 +7317,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.css.pj5nd1wqec.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7362,7 +7362,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.46ein0sx1k.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7407,7 +7407,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7444,7 +7444,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7481,7 +7481,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.min.css.v0zj4ognzu.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7526,7 +7526,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.37tfw0ft22.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7571,7 +7571,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7608,7 +7608,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.hrwsygsryq.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7653,7 +7653,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7690,7 +7690,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7727,7 +7727,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.ft3s53vfgj.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7772,7 +7772,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7809,7 +7809,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.rtl.min.pk9g2wxc8p.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7854,7 +7854,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/css/bootstrap.s35ty4nyc5.css",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7899,7 +7899,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.6cfz1n2cew.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7944,7 +7944,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7981,7 +7981,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.6pdc2jztkx.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8026,7 +8026,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8063,7 +8063,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.493y06b0oq.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8108,7 +8108,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8145,7 +8145,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.iovd86k7lj.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8190,7 +8190,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8227,7 +8227,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8264,7 +8264,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.kbrnm935zg.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8309,7 +8309,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8346,7 +8346,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.jj8uyg4cgr.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8391,7 +8391,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8428,7 +8428,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8465,7 +8465,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.min.js.y7v9cxd14o.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8510,7 +8510,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.esm.vr1egmr9el.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8555,7 +8555,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8592,7 +8592,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.h1s4sie4z3.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8637,7 +8637,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.js.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8674,7 +8674,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.63fj8s7r0e.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8719,7 +8719,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8756,7 +8756,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.0j3bgjxly4.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8801,7 +8801,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.min.js.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8838,7 +8838,7 @@
     },
     {
       "Route": "lib/bootstrap/dist/js/bootstrap.notf2xhcfb.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8883,7 +8883,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8920,7 +8920,7 @@
     },
     {
       "Route": "lib/bootstrap/LICENSE.81b7ukuj9c",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\bootstrap\\LICENSE",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8965,7 +8965,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9010,7 +9010,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9047,7 +9047,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9092,7 +9092,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9129,7 +9129,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9174,7 +9174,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9211,7 +9211,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.83jwlth58m.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9256,7 +9256,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9293,7 +9293,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9330,7 +9330,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.mrlpezrjn3.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9375,7 +9375,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9412,7 +9412,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.lzl9nlhx6b.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9457,7 +9457,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9502,7 +9502,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9539,7 +9539,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9576,7 +9576,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9621,7 +9621,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.0i3buxo5is.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9666,7 +9666,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9703,7 +9703,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9740,7 +9740,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9777,7 +9777,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.o1o13a6vjx.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9822,7 +9822,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.ttgo8qnofa.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9867,7 +9867,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.2z0ns9nrw6.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9912,7 +9912,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9949,7 +9949,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.87fc7y1x7t.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9994,7 +9994,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10031,7 +10031,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.map",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10068,7 +10068,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.muycvpuwrr.js",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10113,7 +10113,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10158,7 +10158,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {

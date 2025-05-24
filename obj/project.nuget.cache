@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WSspCg4DoDs=",
+  "dgSpecHash": "19ryFNYK5+A=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Agata\\Desktop\\Projekty\\Projekty_ASP_dotNET\\Biblioteka_online\\Biblioteka_online.csproj",
+  "projectFilePath": "C:\\Users\\Agata\\OneDrive - Office 365\\Pulpit\\Projekty\\Projekty_ASP_dotNET\\BibliotekaOnline\\Biblioteka_Online\\Biblioteka_online.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Agata\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Agata\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.2\\microsoft.aspnetcore.cryptography.internal.8.0.2.nupkg.sha512",

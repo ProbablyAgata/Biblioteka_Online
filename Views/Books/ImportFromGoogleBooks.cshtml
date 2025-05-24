@@ -1,0 +1,135 @@
+@model BibliotekaOnline.Models.Book
+
+@{
+    ViewData["Title"] = "Import Book from Google Books";
+}
+
+<div class="container">
+    <h1>Import Book from Google Books</h1>
+    
+    <div class="row mb-4">
+        <div class="col-md-3 text-center">
+            @if (!string.IsNullOrEmpty(Model.ThumbnailUrl))
+            {
+                <img src="@Model.ThumbnailUrl" class="img-fluid rounded" alt="@Model.Title" style="max-height: 250px;">
+            }
+            else
+            {
+                <div class="bg-light d-flex align-items-center justify-content-center rounded" style="height: 250px;">
+                    <span class="text-muted">No image</span>
+                </div>
+            }
+        </div>
+        <div class="col-md-9">
+            <h2>@Model.Title</h2>
+            <p>
+                <strong>Author:</strong> @Model.Author<br />
+                <strong>Publisher:</strong> @Model.Publisher<br />
+                <strong>Published:</strong> @Model.PublishedDate<br />
+                <strong>ISBN:</strong> @Model.ISBN<br />
+                <strong>Language:</strong> @Model.Language<br />
+                <strong>Categories:</strong> @Model.Categories<br />
+                <strong>Pages:</strong> @Model.PageCount
+            </p>
+            @if (!string.IsNullOrEmpty(Model.PreviewLink))
+            {
+                <a href="@Model.PreviewLink" target="_blank" class="btn btn-outline-primary">Preview Book</a>
+            }
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">Review and Edit Details</h3>
+            <form asp-action="ConfirmImport" method="post">
+                <input type="hidden" asp-for="GoogleBookId" />
+                <input type="hidden" asp-for="ThumbnailUrl" />
+                <input type="hidden" asp-for="PreviewLink" />
+                
+                <div class="mb-3">
+                    <label asp-for="Title" class="form-label">Title</label>
+                    <input asp-for="Title" class="form-control" required />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="Author" class="form-label">Author</label>
+                    <input asp-for="Author" class="form-control" required />
+                    <span asp-validation-for="Author" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label">Description</label>
+                    <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="TotalCopies" class="form-label">Number of Copies</label>
+                            <input asp-for="TotalCopies" class="form-control" type="number" min="1" required />
+                            <span asp-validation-for="TotalCopies" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="ISBN" class="form-label">ISBN</label>
+                            <input asp-for="ISBN" class="form-control" />
+                            <span asp-validation-for="ISBN" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="Publisher" class="form-label">Publisher</label>
+                            <input asp-for="Publisher" class="form-control" />
+                            <span asp-validation-for="Publisher" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="PublishedDate" class="form-label">Published Date</label>
+                            <input asp-for="PublishedDate" class="form-control" />
+                            <span asp-validation-for="PublishedDate" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="PageCount" class="form-label">Page Count</label>
+                            <input asp-for="PageCount" class="form-control" type="number" min="0" />
+                            <span asp-validation-for="PageCount" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="Language" class="form-label">Language</label>
+                            <input asp-for="Language" class="form-control" />
+                            <span asp-validation-for="Language" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="Categories" class="form-label">Categories</label>
+                    <input asp-for="Categories" class="form-control" />
+                    <span asp-validation-for="Categories" class="text-danger"></span>
+                </div>
+                
+                <div class="d-flex justify-content-between">
+                    <a asp-action="GoogleBooksSearch" class="btn btn-secondary">Back to Search</a>
+                    <button type="submit" class="btn btn-success">Import Book</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

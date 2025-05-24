@@ -1,0 +1,76 @@
+@model BibliotekaOnline.Models.Book
+
+@{
+    ViewData["Title"] = "Book Details";
+}
+
+<div class="container">
+    <h1>@Model.Title</h1>
+    
+    <div class="row mb-4">
+        <div class="col-md-3 text-center">
+            @if (!string.IsNullOrEmpty(Model.ThumbnailUrl))
+            {
+                <img src="@Model.ThumbnailUrl" class="img-fluid rounded" alt="@Model.Title" style="max-height: 250px;">
+            }
+            else
+            {
+                <div class="bg-light d-flex align-items-center justify-content-center rounded" style="height: 250px;">
+                    <span class="text-muted">No image</span>
+                </div>
+            }
+        </div>
+        <div class="col-md-9">
+            <h2>@Model.Title</h2>
+            <p class="lead">By @Model.Author</p>
+            
+            <div class="my-3">
+                <p>@Model.Description</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Publisher:</dt>
+                        <dd class="col-sm-8">@(string.IsNullOrEmpty(Model.Publisher) ? "Not available" : Model.Publisher)</dd>
+                        
+                        <dt class="col-sm-4">Published:</dt>
+                        <dd class="col-sm-8">@(string.IsNullOrEmpty(Model.PublishedDate) ? "Not available" : Model.PublishedDate)</dd>
+                        
+                        <dt class="col-sm-4">ISBN:</dt>
+                        <dd class="col-sm-8">@(string.IsNullOrEmpty(Model.ISBN) ? "Not available" : Model.ISBN)</dd>
+                    </dl>
+                </div>
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4">Language:</dt>
+                        <dd class="col-sm-8">@(string.IsNullOrEmpty(Model.Language) ? "Not available" : Model.Language)</dd>
+                        
+                        <dt class="col-sm-4">Pages:</dt>
+                        <dd class="col-sm-8">@(Model.PageCount == 0 ? "Not available" : Model.PageCount.ToString())</dd>
+                        
+                        <dt class="col-sm-4">Categories:</dt>
+                        <dd class="col-sm-8">@(string.IsNullOrEmpty(Model.Categories) ? "Not available" : Model.Categories)</dd>
+                    </dl>
+                </div>
+            </div>
+            
+            <div class="mt-4">
+                <p>Available Copies: <span class="badge bg-primary">@Model.TotalCopies</span></p>
+                
+                @if (!string.IsNullOrEmpty(Model.PreviewLink))
+                {
+                    <a href="@Model.PreviewLink" class="btn btn-outline-primary" target="_blank">
+                        <i class="bi bi-book"></i> Preview Book
+                    </a>
+                }
+                
+                <a asp-controller="Borrowings" asp-action="Borrow" asp-route-bookId="@Model.Id" class="btn btn-success">
+                    <i class="bi bi-bookmark-plus"></i> Borrow
+                </a>
+                
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div> 

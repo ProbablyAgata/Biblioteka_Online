@@ -1,0 +1,71 @@
+@model BibliotekaOnline.Models.GoogleBooks.GoogleBookApiResponse
+
+@{
+    ViewData["Title"] = "Search Google Books";
+}
+
+<div class="container">
+    <h1>Search Google Books</h1>
+    
+    <form method="get" action="@Url.Action("GoogleBooksSearch")" class="mb-4">
+        <div class="input-group">
+            <input type="text" name="query" class="form-control" placeholder="Search by title, author, or ISBN" value="@Context.Request.Query["query"]" required />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+    
+    @if (Model?.Items != null && Model.Items.Any())
+    {
+        <h2>Found @Model.TotalItems results</h2>
+        <div class="row">
+            @foreach (var book in Model.Items)
+            {
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4 text-center py-3">
+                                @if (!string.IsNullOrEmpty(book.VolumeInfo.ImageLinks?.Thumbnail))
+                                {
+                                    <img src="@book.VolumeInfo.ImageLinks.Thumbnail" class="img-fluid rounded" alt="@book.VolumeInfo.Title" style="max-height: 200px;">
+                                }
+                                else
+                                {
+                                    <div class="bg-light d-flex align-items-center justify-content-center rounded" style="height: 200px;">
+                                        <span class="text-muted">No image</span>
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">@book.VolumeInfo.Title</h5>
+                                    <p class="card-text">
+                                        <strong>Author:</strong> @(string.Join(", ", book.VolumeInfo.Authors ?? new List<string>()))<br />
+                                        <strong>Publisher:</strong> @book.VolumeInfo.Publisher<br />
+                                        <strong>Published:</strong> @book.VolumeInfo.PublishedDate<br />
+                                        @if (book.VolumeInfo.IndustryIdentifiers != null && book.VolumeInfo.IndustryIdentifiers.Any())
+                                        {
+                                            <strong>ISBN:</strong> @book.VolumeInfo.IndustryIdentifiers.FirstOrDefault()?.Identifier<br />
+                                        }
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center mt-3">
+                                        <a href="@Url.Action("ImportFromGoogleBooks", new { id = book.Id })" class="btn btn-success">Import</a>
+                                        @if (!string.IsNullOrEmpty(book.AccessInfo?.WebReaderLink))
+                                        {
+                                            <a href="@book.AccessInfo.WebReaderLink" target="_blank" class="btn btn-outline-primary">Preview</a>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(Context.Request.Query["query"]))
+    {
+        <div class="alert alert-info">
+            No books found matching your search criteria.
+        </div>
+    }
+</div> 

@@ -1,6 +1,6 @@
-# Biblioteka_Online# 📚 Biblioteka Online
+# 📚 Biblioteka Online
 
-Aplikacja webowa umożliwiająca użytkownikom wypożyczanie książek z biblioteki, a administratorowi zarządzanie zasobami i wypożyczeniami.
+Aplikacja webowa umożliwiająca użytkownikom wypożyczanie książek z biblioteki, a administratorowi zarządzanie zasobami i wypożyczeniami. Zintegrowana z Google Books API do wyszukiwania i importowania książek.
 
 ---
 
@@ -14,6 +14,7 @@ Aplikacja webowa umożliwiająca użytkownikom wypożyczanie książek z bibliot
 
 ### Dla administratora:
 - Zarządzanie bazą książek (dodawanie, edytowanie, usuwanie)
+- Wyszukiwanie i importowanie książek z Google Books API
 - Przypisywanie książek użytkownikom
 - Ustalanie terminów zwrotu
 - Panel administracyjny
@@ -24,8 +25,9 @@ Aplikacja webowa umożliwiająca użytkownikom wypożyczanie książek z bibliot
 
 - **Backend**: ASP.NET Core 8 (MVC)
 - **ORM**: Entity Framework Core 8
-- **Frontend**: React (skompilowany do `/wwwroot`)
-- **Baza danych**: SQLite / SQL Server (do wyboru)
+- **Frontend**: Bootstrap 5, jQuery
+- **Baza danych**: SQLite
+- **API**: Google Books API
 
 ---
 
@@ -48,7 +50,11 @@ Aplikacja webowa umożliwiająca użytkownikom wypożyczanie książek z bibliot
       ```
     - (Opcjonalnie) uruchom seeder danych testowych
 
-4. Uruchom aplikację:
+4. Konfiguracja Google Books API (opcjonalnie):
+   - Uzyskaj klucz API z [Google Cloud Console](https://console.cloud.google.com/)
+   - Dodaj klucz do pliku `appsettings.json` w sekcji `GoogleBooks:ApiKey`
+
+5. Uruchom aplikację:
     ```bash
     dotnet run
     ```
@@ -89,6 +95,15 @@ Aplikacja webowa umożliwiająca użytkownikom wypożyczanie książek z bibliot
   - `Author`: string
   - `Description`: string
   - `TotalCopies`: int
+  - `GoogleBookId`: string
+  - `ISBN`: string
+  - `Publisher`: string
+  - `PublishedDate`: string
+  - `PageCount`: int
+  - `Categories`: string
+  - `Language`: string
+  - `ThumbnailUrl`: string
+  - `PreviewLink`: string
   - `Borrowings`: relacja 1:N z `Borrowing`
 
 - **Borrowing**
@@ -101,9 +116,49 @@ Aplikacja webowa umożliwiająca użytkownikom wypożyczanie książek z bibliot
 
 ---
 
+## 🔍 Integracja z Google Books API
+
+Aplikacja oferuje następujące funkcje związane z Google Books API:
+
+- Wyszukiwanie książek po tytule, autorze lub ISBN
+- Przeglądanie szczegółowych informacji o książkach
+- Importowanie książek do biblioteki z zachowaniem wszystkich metadanych
+- Wyświetlanie okładek i linków do podglądu książek
+
+Funkcje API dostępne są dla administratorów w panelu "Google Books".
+
+## 📁 Struktura projektu
+
+- **Controllers/** - Kontrolery MVC i API
+  - **Api/** - Kontrolery Web API (np. GoogleBooksController)
+  - AccountController.cs - Obsługa logowania i rejestracji
+  - BooksController.cs - Zarządzanie książkami
+  - BorrowingsController.cs - Zarządzanie wypożyczeniami
+  - HomeController.cs - Strona główna i dashboard
+
+- **Models/** - Modele danych
+  - **GoogleBooks/** - Modele dla Google Books API
+  - Book.cs - Model książki
+  - Borrowing.cs - Model wypożyczenia
+  - User.cs - Model użytkownika
+
+- **Services/** - Usługi aplikacji
+  - GoogleBooksService.cs - Obsługa komunikacji z Google Books API
+
+- **Views/** - Widoki MVC
+  - **Books/** - Widoki dla książek
+  - **Borrowings/** - Widoki dla wypożyczeń
+  - **Home/** - Widoki dla strony głównej
+  - **Shared/** - Współdzielone elementy widoków
+
+- **Areas/** - Obszary aplikacji
+  - **Identity/** - Obsługa uwierzytelniania użytkowników
+
+---
+
 ## 📦 Deployment
 
-Pliki React (frontend) umieszczone w katalogu `/wwwroot`, nie wymagają uruchamiania node.js. Aplikacja jest gotowa do uruchomienia jednym poleceniem `dotnet run`.
+Aplikacja jest gotowa do uruchomienia jednym poleceniem `dotnet run`. Używa wbudowanego serwera Kestrel.
 
 ---
 

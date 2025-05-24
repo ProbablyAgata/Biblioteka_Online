@@ -21,14 +21,16 @@ namespace BibliotekaOnline.Controllers
 
         public IActionResult Index()
         {
-            if (User.Identity != null && User.Identity.IsAuthenticated)
-            {
-                if (User.IsInRole("Admin"))
-                    return RedirectToAction("AdminHome");
-                else
-                    return RedirectToAction("UserHome");
-            }
+            // Just show the main page, no redirects
+            // This allows both logged in and anonymous users to see the welcome page
             return View();
+        }
+
+        [Authorize]
+        public IActionResult Catalog()
+        {
+            // Redirect to the Books controller Index action
+            return RedirectToAction("Index", "Books");
         }
 
         [Authorize(Roles = "Admin")]
