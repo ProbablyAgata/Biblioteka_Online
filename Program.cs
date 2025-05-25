@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using BibliotekaOnline.Data;
 using BibliotekaOnline.Models;
 using BibliotekaOnline.Services;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +21,9 @@ builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfi
 // Register HttpClient and GoogleBooksService
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<GoogleBooksService>();
+
+// Register Email Service
+builder.Services.AddTransient<IEmailSender, EmailSender>();
 
 // Configure Identity options
 builder.Services.Configure<IdentityOptions>(options =>

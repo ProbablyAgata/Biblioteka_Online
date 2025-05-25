@@ -34,7 +34,7 @@ namespace BibliotekaOnline.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(1000)
+                        .HasMaxLength(5000)
                         .HasColumnType("TEXT");
 
                     b.Property<string>("GoogleBookId")
@@ -91,6 +91,9 @@ namespace BibliotekaOnline.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("BorrowDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("DueDate")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("ReturnDate")

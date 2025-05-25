@@ -3,78 +3,142 @@
     ViewData["Title"] = "Katalog książek";
 }
 
-<div class="mb-4">
-    <h2>Książki dostępne w bibliotece</h2>
-    
-    @if (TempData["Success"] != null)
-    {
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            @TempData["Success"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    }
-    
-    @if (TempData["Error"] != null)
-    {
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            @TempData["Error"]
-            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-    }
+<div class="modern-header">
+    <h2><span class="emoji-icon">📚</span>Katalog książek</h2>
+    <p>Odkryj tysiące fascynujących pozycji w naszej bibliotece</p>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="modern-alert modern-alert-success">
+        <span class="emoji-icon">✅</span>@TempData["Success"]
+    </div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="modern-alert modern-alert-danger">
+        <span class="emoji-icon">❌</span>@TempData["Error"]
+    </div>
+}
+
+<div class="modern-card">
+    <h4 class="section-title">
+        <span class="emoji-icon">🔍</span>Wyszukaj książkę
+    </h4>
     
     <form method="get" class="mb-3">
-        <div class="input-group">
-            <input type="text" name="search" class="form-control" placeholder="Szukaj książki lub autora..." value="@ViewBag.Search" />
-            <button type="submit" class="btn btn-primary">Szukaj</button>
+        <div class="modern-search">
+            <span class="search-icon emoji-icon">🔎</span>
+            <input type="text" name="search" class="modern-input" placeholder="Szukaj książki lub autora..." value="@ViewBag.Search" />
+            <button type="submit" class="modern-btn mt-2">
+                Szukaj
+            </button>
         </div>
     </form>
     
     @if (!string.IsNullOrEmpty(ViewBag.Search))
     {
-        <div class="alert alert-info">
-            Wyniki wyszukiwania dla: <strong>@ViewBag.Search</strong>
-            <a href="@Url.Action("Index")" class="float-end">Wyczyść</a>
+        <div class="info-box">
+            <h6>
+                <span class="emoji-icon">📋</span>Wyniki wyszukiwania dla: <strong>@ViewBag.Search</strong>
+            </h6>
+            <a href="@Url.Action("Index")" class="modern-nav-link">
+                <span class="emoji-icon-small">🔄</span>Wyczyść wyszukiwanie
+            </a>
         </div>
     }
 </div>
 
-<div class="table-responsive">
-    <table class="table table-striped">
-        <thead class="table-light">
-            <tr>
-                <th>Tytuł</th>
-                <th>Autor</th>
-                <th>Dostępnych sztuk</th>
-                <th>Szczegóły</th>
-            </tr>
-        </thead>
-        <tbody>
-        @foreach (var book in Model)
-        {
-            <tr>
-                <td>
-                    <div class="d-flex align-items-center">
-                        @if (!string.IsNullOrEmpty(book.ThumbnailUrl))
-                        {
-                            <img src="@book.ThumbnailUrl" alt="@book.Title" class="me-2" style="height: 40px; width: auto;">
-                        }
-                        @book.Title
-                    </div>
-                </td>
-                <td>@book.Author</td>
-                <td><span class="badge bg-primary">@book.TotalCopies</span></td>
-                <td>
-                    <a asp-action="Details" asp-route-id="@book.Id" class="btn btn-sm btn-outline-primary">Szczegóły</a>
-                </td>
-            </tr>
-        }
-        </tbody>
-    </table>
+<div class="modern-card">
+    <h4 class="section-title">
+        <span class="emoji-icon">📖</span>Dostępne książki
+    </h4>
+    
+    @if (Model.Any())
+    {
+        <div class="table-responsive">
+            <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th><span class="emoji-icon-small">📚</span>Tytuł</th>
+                        <th><span class="emoji-icon-small">✍️</span>Autor</th>
+                        <th><span class="emoji-icon-small">📊</span>Dostępne</th>
+                        <th><span class="emoji-icon-small">👁️</span>Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var book in Model)
+                {
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                @if (!string.IsNullOrEmpty(book.ThumbnailUrl))
+                                {
+                                    <img src="@book.ThumbnailUrl" alt="@book.Title" class="me-3 rounded" style="height: 50px; width: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                }
+                                else
+                                {
+                                    <div class="me-3 d-flex align-items-center justify-content-center rounded" style="height: 50px; width: 40px; background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue)); color: white; font-size: 1.2rem;">
+                                        📖
+                                    </div>
+                                }
+                                <div>
+                                    <strong>@book.Title</strong>
+                                </div>
+                            </div>
+                        </td>
+                        <td>@book.Author</td>
+                        <td>
+                            <span class="badge modern-btn modern-btn-small">
+                                <span class="emoji-icon-small">📦</span>@book.TotalCopies szt.
+                            </span>
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 flex-wrap">
+                                <a asp-action="Details" asp-route-id="@book.Id" class="modern-btn modern-btn-small modern-btn-outline" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">
+                                    <span class="emoji-icon-small">🔍</span>Szczegóły
+                                </a>
+                                <a asp-controller="Borrowings" asp-action="Borrow" asp-route-bookId="@book.Id" class="modern-btn modern-btn-small modern-btn-success" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">
+                                    <span class="emoji-icon-small">📚</span>Wypożycz
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="info-box text-center">
+            <span class="emoji-icon-large">📭</span>
+            <h5>Brak książek</h5>
+            @if (!string.IsNullOrEmpty(ViewBag.Search))
+            {
+                <p>Nie znaleziono książek pasujących do wyszukiwanego hasła. Spróbuj innego wyszukiwania.</p>
+                <a href="@Url.Action("Index")" class="modern-btn">
+                    <span class="emoji-icon">🔄</span>Pokaż wszystkie książki
+                </a>
+            }
+            else
+            {
+                <p>W bibliotece nie ma jeszcze żadnych książek. Skontaktuj się z administratorem.</p>
+            }
+        </div>
+    }
 </div>
 
-@if (!Model.Any())
-{
-    <div class="alert alert-info">
-        Brak książek w bibliotece.
+<div class="modern-card">
+    <div class="success-box text-center">
+        <h5>
+            <span class="emoji-icon">💡</span>Wskazówka
+        </h5>
+        <p class="mb-2">Kliknij "Szczegóły" przy wybranej książce, aby zobaczyć pełny opis i wypożyczyć ją!</p>
+        <div class="d-flex align-items-center justify-content-center">
+            <span class="emoji-icon">🎯</span>
+            <small class="text-muted">Każda książka to nowa przygoda</small>
+        </div>
     </div>
-}
+</div>

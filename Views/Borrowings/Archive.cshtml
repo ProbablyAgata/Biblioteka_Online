@@ -1,34 +1,137 @@
 @model IEnumerable<BibliotekaOnline.Models.Borrowing>
 @{
     ViewData["Title"] = "Archiwum wypożyczeń";
-    Layout = "~/Views/Shared/UserLayout.cshtml";
 }
 
-<h2 class="mb-4">Archiwum wypożyczeń</h2>
-<a href="/Borrowings/Index" class="btn mb-4" style="background-color: #a259c6; color: white; border-radius: 20px; padding: 8px 16px; font-weight: 600;">← Powrót do aktywnych</a>
+<div class="modern-header">
+    <h2>📋 Archiwum wypożyczeń</h2>
+    <p>Historia wszystkich Twoich zwróconych książek</p>
+</div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Tytuł książki</th>
-            <th>Data wypożyczenia</th>
-            <th>Data zwrotu</th>
-            <th>Status</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach (var item in Model)
+@if (TempData["Success"] != null)
+{
+    <div class="modern-alert modern-alert-success">
+        ✅ @TempData["Success"]
+    </div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="modern-alert modern-alert-danger">
+        ❌ @TempData["Error"]
+    </div>
+}
+
+<div class="modern-card">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="section-title">
+            📚 Zwrócone książki
+        </h4>
+        <a asp-action="Index" class="modern-btn modern-btn-outline modern-btn-small">
+            ← Powrót do aktywnych
+        </a>
+    </div>
+    
+    @if (Model.Any())
     {
-        <tr>
-            <td>@item.Book?.Title</td>
-            <td>@item.BorrowDate.ToShortDateString()</td>
-            <td>@(item.ReturnDate != null ? item.ReturnDate.Value.ToShortDateString() : "")</td>
-            <td>
-                <span class="badge bg-success" style="padding: 8px 12px; border-radius: 12px;">
-                    Zwrócono
-                </span>
-            </td>
-        </tr>
+        <div class="table-responsive">
+            <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th>📖 Książka</th>
+                        <th>📅 Data wypożyczenia</th>
+                        <th>📅 Data zwrotu</th>
+                        <th>⏰ Czas wypożyczenia</th>
+                        <th>📊 Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var borrowing in Model)
+                {
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                @if (!string.IsNullOrEmpty(borrowing.Book?.ThumbnailUrl))
+                                {
+                                    <img src="@borrowing.Book.ThumbnailUrl" alt="@borrowing.Book.Title" class="me-3 rounded" style="height: 50px; width: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                }
+                                else
+                                {
+                                    <div class="me-3 d-flex align-items-center justify-content-center rounded" style="height: 50px; width: 40px; background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue)); color: white; font-size: 1.2rem;">
+                                        📖
+                                    </div>
+                                }
+                                <div>
+                                    <strong>@borrowing.Book?.Title</strong>
+                                    <br>
+                                    <small class="text-muted">@borrowing.Book?.Author</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>@borrowing.BorrowDate.ToString("dd.MM.yyyy")</td>
+                        <td>@borrowing.ReturnDate?.ToString("dd.MM.yyyy")</td>
+                        <td>
+                            @if (borrowing.ReturnDate.HasValue)
+                            {
+                                var days = (borrowing.ReturnDate.Value - borrowing.BorrowDate).Days;
+                                <span>@days dni</span>
+                                @if (borrowing.ReturnDate > borrowing.DueDate && borrowing.DueDate > borrowing.BorrowDate)
+                                {
+                                    var delayDays = (borrowing.ReturnDate.Value - borrowing.DueDate).Days;
+                                    @if (delayDays > 0 && delayDays < 1000) // Reasonable delay range
+                                    {
+                                        <br><small class="text-warning">⚠️ Opóźnienie: @delayDays dni</small>
+                                    }
+                                }
+                            }
+                        </td>
+                        <td>
+                            <span class="modern-btn modern-btn-small modern-btn-success">
+                                ✅ Zwrócona
+                            </span>
+                        </td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="text-center mt-4">
+            <div class="info-box">
+                <h6>📊 Statystyki:</h6>
+                <div class="row">
+                    <div class="col-md-4">
+                        <strong>Łącznie wypożyczeń:</strong> @Model.Count()
+                    </div>
+                    <div class="col-md-4">
+                        <strong>Z opóźnieniem:</strong> @Model.Count(b => b.ReturnDate.HasValue && b.ReturnDate > b.DueDate && b.DueDate > b.BorrowDate && (b.ReturnDate.Value - b.DueDate).Days > 0 && (b.ReturnDate.Value - b.DueDate).Days < 1000)
+                    </div>
+                    <div class="col-md-4">
+                        <strong>Na czas:</strong> @Model.Count(b => b.ReturnDate.HasValue && b.ReturnDate <= b.DueDate && b.DueDate > b.BorrowDate)
+                    </div>
+                </div>
+            </div>
+        </div>
     }
-    </tbody>
-</table>
+    else
+    {
+        <div class="info-box text-center">
+            <h5>📭 Brak historii</h5>
+            <p>Nie masz jeszcze żadnych zwróconych książek w archiwum.</p>
+            <a asp-action="Index" class="modern-btn">
+                📚 Zobacz aktywne wypożyczenia
+            </a>
+        </div>
+    }
+</div>
+
+<div class="modern-card">
+    <div class="success-box">
+        <h6>💡 Informacje:</h6>
+        <ul class="mb-0">
+            <li>Tu znajdziesz historię wszystkich swoich zwróconych książek</li>
+            <li>Książki z opóźnieniem są oznaczone ostrzeżeniem</li>
+            <li>Statystyki pomagają śledzić swoje nawyki czytelnicze</li>
+        </ul>
+    </div>
+</div>

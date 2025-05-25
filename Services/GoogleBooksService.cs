@@ -15,13 +15,12 @@ namespace BibliotekaOnline.Services
             _configuration = configuration;
         }
 
-        public async Task<GoogleBookApiResponse> SearchBooksAsync(string query, int maxResults = 10)
+        public async Task<GoogleBookApiResponse> SearchBooksAsync(string query, int startIndex = 0, int maxResults = 10)
         {
-            // Get API key from configuration if available
             string apiKey = _configuration["GoogleBooks:ApiKey"] ?? string.Empty;
             string apiKeyParam = string.IsNullOrEmpty(apiKey) ? string.Empty : $"&key={apiKey}";
             
-            string url = $"{_baseUrl}?q={Uri.EscapeDataString(query)}&maxResults={maxResults}{apiKeyParam}";
+            string url = $"{_baseUrl}?q={Uri.EscapeDataString(query)}&startIndex={startIndex}&maxResults={maxResults}{apiKeyParam}";
             
             var response = await _httpClient.GetAsync(url);
             response.EnsureSuccessStatusCode();
@@ -34,7 +33,6 @@ namespace BibliotekaOnline.Services
 
         public async Task<GoogleBookItem?> GetBookByIdAsync(string id)
         {
-            // Get API key from configuration if available
             string apiKey = _configuration["GoogleBooks:ApiKey"] ?? string.Empty;
             string apiKeyParam = string.IsNullOrEmpty(apiKey) ? string.Empty : $"?key={apiKey}";
             

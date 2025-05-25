@@ -24,7 +24,7 @@ namespace BibliotekaOnline.Controllers.Api
         {
             if (string.IsNullOrEmpty(query))
             {
-                return BadRequest("Query parameter is required");
+                return BadRequest("Parametr zapytania jest wymagany");
             }
 
             var result = await _googleBooksService.SearchBooksAsync(query, maxResults);
@@ -36,7 +36,7 @@ namespace BibliotekaOnline.Controllers.Api
         {
             if (string.IsNullOrEmpty(isbn))
             {
-                return BadRequest("ISBN is required");
+                return BadRequest("ISBN jest wymagane");
             }
 
             var result = await _googleBooksService.SearchBooksByIsbnAsync(isbn, maxResults);
@@ -48,7 +48,7 @@ namespace BibliotekaOnline.Controllers.Api
         {
             if (string.IsNullOrEmpty(id))
             {
-                return BadRequest("ID is required");
+                return BadRequest("ID jest wymagane");
             }
 
             var result = await _googleBooksService.GetBookByIdAsync(id);
@@ -66,23 +66,21 @@ namespace BibliotekaOnline.Controllers.Api
         {
             if (string.IsNullOrEmpty(id))
             {
-                return BadRequest("ID is required");
+                return BadRequest("ID jest wymagane");
             }
 
-            // Check if the book already exists in the database
             var existingBook = _context.Books.FirstOrDefault(b => b.GoogleBookId == id);
             if (existingBook != null)
             {
-                return Conflict($"Book with Google ID {id} already exists in the database");
+                return Conflict($"Książka z Google ID {id} już istnieje w bazie danych");
             }
 
             var googleBook = await _googleBooksService.GetBookByIdAsync(id);
             if (googleBook == null)
             {
-                return NotFound($"Book with ID {id} not found in Google Books");
+                return NotFound($"Książka z Google ID {id} nie znaleziona");
             }
 
-            // Create a new book from the Google Books data
             var book = new Book
             {
                 Title = googleBook.VolumeInfo.Title,

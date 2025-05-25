@@ -1,34 +1,72 @@
 @model BibliotekaOnline.Models.Borrowing
 @{
     ViewData["Title"] = "Dodaj wypożyczenie";
-    Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<h2 class="mb-4">Dodaj wypożyczenie</h2>
+<div class="modern-header">
+    <h2>➕ Dodaj wypożyczenie</h2>
+    <p>Utwórz nowe wypożyczenie dla użytkownika</p>
+</div>
 
-<form method="post" class="mt-4">
-    <div class="form-group mb-4">
-        <label class="form-label">Użytkownik</label>
-        <select name="UserId" class="form-control" style="border-radius: 12px; border-color: #ffe0f7;">
-            @foreach (var user in ViewBag.Users)
-            {
-                <option value="@user.Id">@user.Email</option>
-            }
-        </select>
+<div class="modern-card">
+    <form method="post">
+        <div class="modern-form-group">
+            <label class="modern-label">
+                👤 Użytkownik
+            </label>
+            <select name="UserId" class="modern-input" required>
+                <option value="">-- Wybierz użytkownika --</option>
+                @foreach (var user in ViewBag.Users)
+                {
+                    <option value="@user.Id">@user.Email</option>
+                }
+            </select>
+        </div>
+
+        <div class="modern-form-group">
+            <label class="modern-label">
+                📖 Książka
+            </label>
+            <select name="BookId" class="modern-input" required>
+                <option value="">-- Wybierz książkę --</option>
+                @foreach (var book in ViewBag.Books)
+                {
+                    <option value="@book.Id">@book.Title - @book.Author</option>
+                }
+            </select>
+        </div>
+
+        <div class="info-box">
+            <h6>📋 Informacje:</h6>
+            <div class="d-flex align-items-center mb-2">
+                <span class="me-2">📅</span>
+                <span>Data wypożyczenia: <strong>@DateTime.Now.ToString("dd.MM.yyyy")</strong></span>
+            </div>
+            <div class="d-flex align-items-center">
+                <span class="me-2">⏰</span>
+                <span>Termin zwrotu: <strong>@DateTime.Now.AddDays(14).ToString("dd.MM.yyyy")</strong> (14 dni)</span>
+            </div>
+        </div>
+
+        <div class="d-flex gap-3 justify-content-center">
+            <button type="submit" class="modern-btn">
+                ➕ Dodaj wypożyczenie
+            </button>
+            <a asp-action="AdminPanel" class="modern-btn modern-btn-outline">
+                ❌ Anuluj
+            </a>
+        </div>
+    </form>
+</div>
+
+<div class="modern-card">
+    <div class="success-box">
+        <h6>💡 Wskazówki:</h6>
+        <ul class="mb-0">
+            <li>Wybierz użytkownika z listy zarejestrowanych</li>
+            <li>Wybierz dostępną książkę z katalogu</li>
+            <li>Standardowy okres wypożyczenia to 14 dni</li>
+            <li>Status wypożyczenia będzie automatycznie ustawiony jako aktywne</li>
+        </ul>
     </div>
-    <div class="form-group mb-4">
-        <label class="form-label">Książka</label>
-        <select name="BookId" class="form-control" style="border-radius: 12px; border-color: #ffe0f7;">
-            @foreach (var book in ViewBag.Books)
-            {
-                <option value="@book.Id">@book.Title</option>
-            }
-        </select>
-    </div>
-    <div class="form-group mb-4">
-        <label class="form-label">Data zwrotu</label>
-        <input type="date" name="ReturnDate" class="form-control" style="border-radius: 12px; border-color: #ffe0f7;" />
-    </div>
-    <button type="submit" class="btn" style="background-color: #a259c6; color: white; border-radius: 20px; padding: 8px 24px; font-weight: 600;">Dodaj</button>
-    <a href="/Borrowings/AdminPanel" class="btn btn-outline-secondary" style="border-radius: 20px; padding: 8px 24px; margin-left: 10px;">Anuluj</a>
-</form>
+</div>

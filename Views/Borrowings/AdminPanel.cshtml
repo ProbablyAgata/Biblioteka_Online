@@ -1,49 +1,160 @@
 @model IEnumerable<BibliotekaOnline.Models.Borrowing>
 @{
-    ViewData["Title"] = "Panel administratora - wypożyczenia";
-    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    ViewData["Title"] = "Panel administratora";
 }
 
-<h2 class="mb-4">Panel administratora – wypożyczenia</h2>
-<a class="btn" style="background-color: #a259c6; color: white; border-radius: 20px; padding: 8px 16px; font-weight: 600;" href="/Borrowings/Create">Nowe wypożyczenie</a>
-<table class="table">
-    <thead>
-        <tr>
-            <th>Użytkownik</th>
-            <th>Książka</th>
-            <th>Do zwrotu</th>
-            <th>Status</th>
-            <th>Akcje</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach (var item in Model)
+<div class="modern-header">
+    <h2>⚙️ Panel administratora</h2>
+    <p>Zarządzaj wypożyczeniami i monitoruj aktywność biblioteki</p>
+</div>
+
+<div class="row mb-4">
+    <div class="col-md-3">
+        <div class="admin-card">
+            <span style="font-size: 2rem;">📋</span>
+            <h5 class="admin-title">Aktywne wypożyczenia</h5>
+            <div class="admin-stats">@ViewBag.ActiveBorrowings</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="admin-card">
+            <span style="font-size: 2rem;">📚</span>
+            <h5 class="admin-title">Liczba książek</h5>
+            <div class="admin-stats">@ViewBag.TotalBooks</div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="admin-card">
+            <span style="font-size: 2rem;">📖</span>
+            <h5 class="admin-title">Dodaj nową książkę</h5>
+            <div class="admin-stats" style="font-size: 1rem; margin: 0.5rem 0;">
+                <a asp-controller="Books" asp-action="GoogleBooksSearch" class="modern-btn modern-btn-small">
+                    🔍 Google Books
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="admin-card">
+            <span style="font-size: 2rem;">➕</span>
+            <h5 class="admin-title">Dodaj nowe wypożyczenie</h5>
+            <div class="admin-stats" style="font-size: 1rem; margin: 0.5rem 0;">
+                <a asp-action="Create" class="modern-btn modern-btn-small">
+                    ➕ Nowe wypożyczenie
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modern-card">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h4 class="section-title">
+            📋 Ostatnie wypożyczenia
+        </h4>
+        <a asp-controller="Borrowings" asp-action="Index" class="modern-btn modern-btn-outline modern-btn-small">
+            👁️ Panel wypożyczeń
+        </a>
+    </div>
+    
+    @if (Model.Any())
     {
-        <tr>
-            <td>@item.User?.Email</td>
-                <td>
-                    <a href="@Url.Action("Details", "Books", new { id = item.Book?.Id })" class="text-decoration-none">
-                        <strong>@(item.Book?.Title ?? "Brak tytułu")</strong>
-                </td>
-            <td>@(item.ReturnDate != null ? item.ReturnDate.Value.ToShortDateString() : "")</td>
-            <td>
-                <span class="badge @(item.Returned ? "bg-success" : "bg-primary")" style="padding: 8px 12px; border-radius: 12px;">
-                    @(item.Returned ? "Zwrócono" : "Wypożyczona")
-                </span>
-            </td>
-            <td>
-                @if (!item.Returned)
+        <div class="table-responsive">
+            <table class="modern-table">
+                <thead>
+                    <tr>
+                        <th>👤 Użytkownik</th>
+                        <th>📖 Książka</th>
+                        <th>📅 Data wypożyczenia</th>
+                        <th>📊 Status</th>
+                        <th>⚡ Akcje</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var borrowing in Model)
                 {
-                    <form asp-action="MarkReturned" method="post">
-                        <input type="hidden" name="id" value="@item.Id" />
-                        <button type="submit" class="btn btn-sm" style="background-color: #a259c6; color: white; border-radius: 15px;">
-                            Oznacz jako zwrócone
-                        </button>
-                    </form>
+                    <tr>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <span class="me-2" style="font-size: 1.2rem;">👤</span>
+                                <strong>@borrowing.User?.Email</strong>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                @if (!string.IsNullOrEmpty(borrowing.Book?.ThumbnailUrl))
+                                {
+                                    <img src="@borrowing.Book.ThumbnailUrl" alt="@borrowing.Book.Title" class="me-3 rounded" style="height: 40px; width: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                }
+                                else
+                                {
+                                    <div class="me-3 d-flex align-items-center justify-content-center rounded" style="height: 40px; width: 30px; background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue)); color: white; font-size: 1rem;">
+                                        📖
+                                    </div>
+                                }
+                                <div>
+                                    <a href="@Url.Action("Details", "Books", new { id = borrowing.Book?.Id })" class="text-decoration-none">
+                                        <strong>@(borrowing.Book?.Title ?? "Brak tytułu")</strong>
+                                    </a>
+                                    <br>
+                                    <small class="text-muted">@borrowing.Book?.Author</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>@borrowing.BorrowDate.ToString("dd.MM.yyyy")</td>
+                        <td>
+                            @if (borrowing.ReturnDate.HasValue)
+                            {
+                                <span class="modern-btn modern-btn-small modern-btn-success">
+                                    ✅ Zwrócona
+                                </span>
+                                <br><small class="text-muted">@borrowing.ReturnDate.Value.ToString("dd.MM.yyyy")</small>
+                            }
+                            else if (borrowing.DueDate < DateTime.Now)
+                            {
+                                <span class="modern-btn modern-btn-small modern-btn-danger">
+                                    ❌ Nie zwrócono
+                                </span>
+                                <br><small class="text-danger">Opóźnienie: @((DateTime.Now - borrowing.DueDate).Days) dni</small>
+                            }
+                            else
+                            {
+                                <span class="modern-btn modern-btn-small modern-btn-outline">
+                                    📖 Wypożyczona
+                                </span>
+                            }
+                        </td>
+                        <td>
+                            <div class="d-flex gap-1 flex-wrap">
+                                <a href="@Url.Action("Edit", new { id = borrowing.Id })" class="modern-btn modern-btn-small modern-btn-outline" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">
+                                    ✏️ Edytuj
+                                </a>
+                                @if (!borrowing.ReturnDate.HasValue)
+                                {
+                                    <form asp-action="MarkReturned" method="post" style="display:inline;">
+                                        <input type="hidden" name="id" value="@borrowing.Id" />
+                                        <button type="submit" class="modern-btn modern-btn-small" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;" onclick="return confirm('Czy na pewno chcesz oznaczyć jako zwrócone?')">
+                                            🔄 Zwróć
+                                        </button>
+                                    </form>
+                                }
+                            </div>
+                        </td>
+                    </tr>
                 }
-            </td>
-        </tr>
+                </tbody>
+            </table>
+        </div>
     }
-    </tbody>
-</table>
+    else
+    {
+        <div class="info-box text-center">
+            <h5>📭 Brak wypożyczeń</h5>
+            <p>Nie ma jeszcze żadnych wypożyczeń w systemie.</p>
+            <a asp-action="Create" class="modern-btn">
+                ➕ Dodaj pierwsze wypożyczenie
+            </a>
+        </div>
+    }
+</div>
 

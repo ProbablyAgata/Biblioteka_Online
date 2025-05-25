@@ -1,0 +1,63 @@
+@page
+@using BibliotekaOnline.Areas.Identity.Pages.Account.Manage
+@model IndexModel
+@{
+    ViewData["Title"] = "Zarządzanie kontem";
+    ViewData["ActivePage"] = "Profile";
+    Layout = "_ManageLayout";
+}
+
+<partial name="_StatusMessage" for="StatusMessage" />
+        <div class="modern-card">
+            <h4 class="section-title">
+                ⚙️ Ustawienia profilu
+            </h4>
+            
+            <form id="profile-form" method="post">
+                <div asp-validation-summary="ModelOnly" class="modern-alert modern-alert-danger" role="alert"></div>
+                <div class="modern-form-group">
+                    <label asp-for="Input.Email" class="modern-label">
+                        📧 Adres email
+                    </label>
+                    <input asp-for="Input.Email" class="modern-input" placeholder="Twój adres email" disabled />
+                    <small class="text-muted">Email jest używany jako nazwa użytkownika i nie może być zmieniony</small>
+                </div>
+                <button id="update-profile-button" type="submit" class="modern-btn w-100">
+                    💾 Zapisz zmiany
+                </button>
+            </form>
+        </div>
+        
+        <div class="modern-card mt-4">
+            <h4 class="section-title">
+                🔧 Dodatkowe opcje
+            </h4>
+            
+            <div class="modern-card modern-card-small hover-glow">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="mb-1">🔒 Zmień hasło</h6>
+                        <small class="text-muted">Zaktualizuj swoje hasło dla większego bezpieczeństwa</small>
+                    </div>
+                    <a class="modern-btn modern-btn-small modern-btn-outline" asp-page="./ChangePassword">
+                        Zmień
+                    </a>
+                </div>
+            </div>
+            
+            <div class="modern-card modern-card-small hover-glow mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h6 class="mb-1">📊 Dane osobowe</h6>
+                        <small class="text-muted">Zarządzaj swoimi danymi osobowymi i prywatnością</small>
+                    </div>
+                    <a class="modern-btn modern-btn-small modern-btn-outline" asp-page="./PersonalData">
+                        Zarządzaj
+                    </a>
+                </div>
+            </div>
+        </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+} 

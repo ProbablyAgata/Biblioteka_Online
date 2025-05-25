@@ -2,41 +2,94 @@
     ViewData["Title"] = "Biblioteka Online";
 }
 
-<div class="homepage-container" style="display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:70vh;">
-    <div class="cute-animation" style="margin-bottom:2rem; position:relative;">
-        <div style="position:absolute; top:-30px; left:-20px; font-size:2rem;" class="floating-star">✨</div>
-        <svg width="140" height="140" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" class="animated-book">
-            <rect x="20" y="30" width="80" height="60" rx="12" fill="#e0f0ff" stroke="#4287f5" stroke-width="3"/>
-            <rect x="30" y="40" width="60" height="40" rx="8" fill="#fff" stroke="#5aa6ff" stroke-width="2"/>
-            <rect x="40" y="50" width="40" height="20" rx="4" fill="#f8fafc" stroke="#4287f5" stroke-width="1.5"/>
-            <path d="M30 40 Q60 70 90 40" stroke="#5aa6ff" stroke-width="2" fill="none"/>
-            <circle cx="85" cy="35" r="8" fill="#4ecdc4" opacity="0.7"/>
-        </svg>
-        <div style="position:absolute; bottom:-15px; right:-15px; font-size:2rem;" class="floating-star-delayed">⭐</div>
+<div class="modern-header">
+    <div class="mb-4">
+        <h1>📚 Witamy w Bibliotece Online!</h1>
+        <p>Odkrywaj, wypożyczaj i zarządzaj książkami w nowoczesny, przyjazny sposób</p>
     </div>
-    <h1 style="font-size:2.5rem; color:#4287f5; font-weight:700; margin-bottom:0.5rem; text-align:center;">Witamy w Bibliotece Online!</h1>
-    <p style="font-size:1.2rem; color:#5a7d9a; margin-bottom:2rem; text-align:center; max-width:600px;">Odkrywaj, wypożyczaj i zarządzaj książkami w nowoczesny, przyjazny sposób.</p>
-    
-    @if (User.Identity != null && User.Identity.IsAuthenticated)
-    {
-        <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
-            <a asp-controller="Books" asp-action="Index" class="btn" style="font-size:1.1rem; background: linear-gradient(90deg, #4287f5 0%, #0056b3 100%); border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
-                <span style="position:relative; z-index:2;">Przeglądaj katalog</span>
-            </a>
-            <a asp-controller="Borrowings" asp-action="Index" class="btn btn-outline" style="font-size:1.1rem; background:#fff; color:#4287f5; border:2px solid #4287f5; border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
-                <span style="position:relative; z-index:2;">Moje wypożyczenia</span>
-            </a>
+</div>
+
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <div class="modern-card text-center">
+            <div class="mb-4">
+                <h3 class="section-title-large justify-content-center">
+                    Rozpocznij swoją przygodę z książkami
+                </h3>
+            </div>
+            
+            @if (User.Identity != null && User.Identity.IsAuthenticated)
+            {
+                <div class="info-box">
+                    <h5>👋 Witaj ponownie!</h5>
+                    <p>Gotowy na nowe literackie przygody? Sprawdź nasz katalog lub zarządzaj swoimi wypożyczeniami.</p>
+                </div>
+                
+                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                    <a asp-controller="Books" asp-action="Index" class="modern-btn">
+                        📖 Przeglądaj katalog
+                    </a>
+                    <a asp-controller="Borrowings" asp-action="Index" class="modern-btn modern-btn-outline">
+                        📋 Moje wypożyczenia
+                    </a>
+                </div>
+            }
+            else
+            {
+                <div class="info-box">
+                    <h5>🎉 Dołącz do nas już dziś!</h5>
+                    <p>Utwórz konto, aby otrzymać dostęp do tysięcy książek i zarządzać swoimi wypożyczeniami online.</p>
+                </div>
+                
+                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                    <a asp-area="Identity" asp-page="/Account/Login" class="modern-btn">
+                        🔑 Zaloguj się
+                    </a>
+                    <a asp-area="Identity" asp-page="/Account/Register" class="modern-btn modern-btn-outline">
+                        ✏️ Zarejestruj się
+                    </a>
+                </div>
+            }
         </div>
-    }
-    else
-    {
-        <div style="display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;">
-            <a asp-controller="Account" asp-action="Login" class="btn" style="font-size:1.1rem; background: linear-gradient(90deg, #4287f5 0%, #0056b3 100%); border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
-                <span style="position:relative; z-index:2;">Zaloguj się</span>
-            </a>
-            <a asp-controller="Account" asp-action="Register" class="btn btn-outline" style="font-size:1.1rem; background:#fff; color:#4287f5; border:2px solid #4287f5; border-radius:30px; padding:10px 24px; position:relative; overflow:hidden;">
-                <span style="position:relative; z-index:2;">Zarejestruj się</span>
-            </a>
+        
+        <div class="row mt-4">
+            <div class="col-md-4 d-flex">
+                <div class="modern-card modern-card-small text-center hover-glow w-100 d-flex flex-column">
+                    <div class="mb-3">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📚</div>
+                        <h5 class="mb-3">Bogaty katalog</h5>
+                        <p class="flex-grow-1">Tysiące książek z różnych kategorii czekają na Ciebie</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="modern-card modern-card-small text-center hover-glow w-100 d-flex flex-column">
+                    <div class="mb-3">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚡</div>
+                        <h5 class="mb-3">Szybkie wypożyczenia</h5>
+                        <p class="flex-grow-1">Wypożyczaj książki jednym kliknięciem i czytaj od razu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="modern-card modern-card-small text-center hover-glow w-100 d-flex flex-column">
+                    <div class="mb-3">
+                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔒</div>
+                        <h5 class="mb-3">Bezpieczne konto</h5>
+                        <p class="flex-grow-1">Twoje dane są chronione najnowszymi technologiami</p>
+                    </div>
+                </div>
+            </div>
         </div>
-    }
+        
+        <div class="modern-card mt-4">
+            <div class="success-box">
+                <h5>✨ Nowości w bibliotece</h5>
+                <p class="mb-2">Regularnie dodajemy nowe tytuły do naszej kolekcji. Sprawdź co nowego pojawiło się w naszym katalogu!</p>
+                <div class="d-flex align-items-center">
+                    <small class="text-muted">📈 Ponad 500 nowych książek w tym miesiącu</small>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

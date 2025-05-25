@@ -62,14 +62,16 @@ namespace BibliotekaOnline.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> GoogleBooksSearch(string query)
+        public async Task<IActionResult> GoogleBooksSearch(string query, int startIndex = 0)
         {
             if (string.IsNullOrEmpty(query))
             {
                 return View(new GoogleBookApiResponse());
             }
 
-            var results = await _googleBooksService.SearchBooksAsync(query);
+            var results = await _googleBooksService.SearchBooksAsync(query, startIndex);
+            ViewBag.Query = query;
+            ViewBag.StartIndex = startIndex;
             return View(results);
         }
 
@@ -97,17 +99,19 @@ namespace BibliotekaOnline.Controllers
 
             var book = new Book
             {
-                Title = googleBook.VolumeInfo.Title,
-                Author = string.Join(", ", googleBook.VolumeInfo.Authors),
-                Description = googleBook.VolumeInfo.Description,
+                Title = googleBook.VolumeInfo.Title ?? "Brak tytułu",
+                Author = googleBook.VolumeInfo.Authors != null && googleBook.VolumeInfo.Authors.Any() 
+                    ? string.Join(", ", googleBook.VolumeInfo.Authors) 
+                    : "Nieznany autor",
+                Description = googleBook.VolumeInfo.Description ?? string.Empty,
                 TotalCopies = 1, // Default value
                 GoogleBookId = googleBook.Id,
                 ISBN = googleBook.VolumeInfo.IndustryIdentifiers?.FirstOrDefault()?.Identifier ?? string.Empty,
-                Publisher = googleBook.VolumeInfo.Publisher,
-                PublishedDate = googleBook.VolumeInfo.PublishedDate,
+                Publisher = googleBook.VolumeInfo.Publisher ?? string.Empty,
+                PublishedDate = googleBook.VolumeInfo.PublishedDate ?? string.Empty,
                 PageCount = googleBook.VolumeInfo.PageCount,
                 Categories = string.Join(", ", googleBook.VolumeInfo.Categories ?? new List<string>()),
-                Language = googleBook.VolumeInfo.Language,
+                Language = googleBook.VolumeInfo.Language ?? string.Empty,
                 ThumbnailUrl = googleBook.VolumeInfo.ImageLinks?.Thumbnail ?? string.Empty,
                 PreviewLink = googleBook.AccessInfo?.WebReaderLink ?? string.Empty
             };
@@ -119,16 +123,47 @@ namespace BibliotekaOnline.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> ConfirmImport(Book book)
         {
-            if (!ModelState.IsValid)
+            try
             {
+                // Ensure required fields are not empty
+                if (string.IsNullOrWhiteSpace(book.Title))
+                {
+                    book.Title = "Brak tytułu";
+                }
+                
+                if (string.IsNullOrWhiteSpace(book.Author))
+                {
+                    book.Author = "Nieznany autor";
+                }
+
+                // Check if book with same GoogleBookId already exists
+                if (!string.IsNullOrEmpty(book.GoogleBookId))
+                {
+                    var existingBook = await _context.Books.FirstOrDefaultAsync(b => b.GoogleBookId == book.GoogleBookId);
+                    if (existingBook != null)
+                    {
+                        TempData["Error"] = "Ta książka już istnieje w bibliotece";
+                        return View("ImportFromGoogleBooks", book);
+                    }
+                }
+
+                if (!ModelState.IsValid)
+                {
+                    TempData["Error"] = "Wystąpiły błędy walidacji. Sprawdź wprowadzone dane.";
+                    return View("ImportFromGoogleBooks", book);
+                }
+
+                _context.Books.Add(book);
+                await _context.SaveChangesAsync();
+                
+                TempData["Success"] = $"Książka '{book.Title}' została pomyślnie zaimportowana z Google Books";
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = $"Wystąpił błąd podczas importowania książki: {ex.Message}";
                 return View("ImportFromGoogleBooks", book);
             }
-
-            _context.Books.Add(book);
-            await _context.SaveChangesAsync();
-            
-            TempData["Success"] = "Book successfully imported from Google Books";
-            return RedirectToAction(nameof(Index));
         }
     }
 }

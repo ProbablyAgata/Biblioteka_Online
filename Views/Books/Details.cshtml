@@ -1,7 +1,7 @@
 ﻿@model BibliotekaOnline.Models.Book
 
 @{
-    ViewData["Title"] = "Book Details";
+    ViewData["Title"] = "Szczegóły książki";
 }
 
 <div class="container">
@@ -16,7 +16,7 @@
             else
             {
                 <div class="bg-light d-flex align-items-center justify-content-center rounded" style="height: 250px;">
-                    <span class="text-muted">No image</span>
+                    <span class="text-muted">Brak obrazu</span>
                 </div>
             }
         </div>
@@ -58,7 +58,7 @@
             <div class="mt-4">
                 <p>Dostępne kopie: <span class="badge bg-primary">@Model.TotalCopies</span></p>
                 
-                <a asp-controller="Borrowings" asp-action="Create" asp-route-bookId="@Model.Id" class="btn btn-success">
+                <a asp-controller="Borrowings" asp-action="Borrow" asp-route-bookId="@Model.Id" class="btn btn-success">
                     <i class="bi bi-bookmark-plus"></i> Wypożycz
                 </a>
                 

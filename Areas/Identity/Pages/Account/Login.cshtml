@@ -5,43 +5,69 @@
     ViewData["Title"] = "Logowanie";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="modern-header">
+    <h2>🔑 @ViewData["Title"]</h2>
+    <p>Zaloguj się do swojego konta i odkrywaj świat książek</p>
+</div>
+
 <div class="row">
-    <div class="col-md-4">
-        <section>
+    <div class="col-lg-6 mx-auto">
+        <div class="modern-card">
+            <div class="text-center mb-4">
+                <h4>Witaj ponownie!</h4>
+            </div>
+            
             <form id="account" method="post">
-                <h2>Zaloguj się do swojego konta.</h2>
-                <hr />
-                <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                    <label asp-for="Input.Email" class="form-label">Email</label>
+                <div asp-validation-summary="ModelOnly" class="modern-alert modern-alert-danger" role="alert"></div>
+                
+                <div class="modern-form-group">
+                    <label asp-for="Input.Email" class="modern-label">
+                        📧 Email
+                    </label>
+                    <input asp-for="Input.Email" class="modern-input" autocomplete="username" aria-required="true" placeholder="Wprowadź swój adres email" />
                     <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
-                <div class="form-floating mb-3">
-                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
-                    <label asp-for="Input.Password" class="form-label">Hasło</label>
+                
+                <div class="modern-form-group">
+                    <label asp-for="Input.Password" class="modern-label">
+                        🔒 Hasło
+                    </label>
+                    <input asp-for="Input.Password" class="modern-input" autocomplete="current-password" aria-required="true" placeholder="Wprowadź swoje hasło" type="password" />
                     <span asp-validation-for="Input.Password" class="text-danger"></span>
                 </div>
-                <div class="checkbox mb-3">
-                    <label asp-for="Input.RememberMe" class="form-label">
+                
+                <div class="modern-form-group">
+                    <div class="form-check">
                         <input class="form-check-input" asp-for="Input.RememberMe" />
-                        @Html.DisplayNameFor(m => m.Input.RememberMe)
-                    </label>
+                        <label class="form-check-label" asp-for="Input.RememberMe">
+                            💾 @Html.DisplayNameFor(m => m.Input.RememberMe)
+                        </label>
+                    </div>
                 </div>
-                <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Zaloguj</button>
-                </div>
-                <div>
-                    <p>
-                        <a id="forgot-password" asp-page="./ForgotPassword">Zapomniałeś hasła?</a>
-                    </p>
-                    <p>
-                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Zarejestruj się jako nowy użytkownik</a>
+                
+                <button id="login-submit" type="submit" class="modern-btn w-100 mb-3">
+                    🚀 Zaloguj się
+                </button>
+                
+                <div class="text-center">
+                    <p class="mb-2">
+                        <a id="forgot-password" asp-page="./ForgotPassword" class="modern-nav-link">
+                            ❓ Zapomniałeś hasła?
+                        </a>
                     </p>
                 </div>
             </form>
-        </section>
+        </div>
+        
+        <div class="modern-card">
+            <div class="info-box text-center">
+                <h5>🎉 Nowy użytkownik?</h5>
+                <p>Utwórz konto i otrzymaj dostęp do tysięcy książek!</p>
+                <a asp-page="./Register" class="modern-btn modern-btn-outline">
+                    🌟 Dołącz do nas
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 

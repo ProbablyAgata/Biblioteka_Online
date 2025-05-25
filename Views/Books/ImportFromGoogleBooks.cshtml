@@ -1,135 +1,171 @@
 @model BibliotekaOnline.Models.Book
 
 @{
-    ViewData["Title"] = "Import Book from Google Books";
+    ViewData["Title"] = "Importuj książkę z Google Books";
 }
 
-<div class="container">
-    <h1>Import Book from Google Books</h1>
-    
-    <div class="row mb-4">
+<div class="modern-header">
+    <h2>📥 Importuj książkę z Google Books</h2>
+    <p>Sprawdź dane książki przed dodaniem do biblioteki</p>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="modern-alert modern-alert-success">
+        ✅ @TempData["Success"]
+    </div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="modern-alert modern-alert-danger">
+        ❌ @TempData["Error"]
+    </div>
+}
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="modern-alert modern-alert-danger">
+        <h6>❌ Błędy walidacji:</h6>
+        <div asp-validation-summary="All" class="text-danger"></div>
+    </div>
+}
+
+<div class="modern-card">
+    <div class="row">
         <div class="col-md-3 text-center">
             @if (!string.IsNullOrEmpty(Model.ThumbnailUrl))
             {
-                <img src="@Model.ThumbnailUrl" class="img-fluid rounded" alt="@Model.Title" style="max-height: 250px;">
+                <img src="@Model.ThumbnailUrl" alt="@Model.Title" class="img-fluid rounded shadow" style="max-height: 300px;">
             }
             else
             {
-                <div class="bg-light d-flex align-items-center justify-content-center rounded" style="height: 250px;">
-                    <span class="text-muted">No image</span>
+                <div class="d-flex align-items-center justify-content-center rounded shadow" style="height: 300px; width: 200px; background: linear-gradient(45deg, var(--light-blue), var(--primary-blue)); color: white; margin: 0 auto;">
+                    <span style="font-size: 3rem;">📖</span>
                 </div>
             }
         </div>
         <div class="col-md-9">
-            <h2>@Model.Title</h2>
-            <p>
-                <strong>Author:</strong> @Model.Author<br />
-                <strong>Publisher:</strong> @Model.Publisher<br />
-                <strong>Published:</strong> @Model.PublishedDate<br />
-                <strong>ISBN:</strong> @Model.ISBN<br />
-                <strong>Language:</strong> @Model.Language<br />
-                <strong>Categories:</strong> @Model.Categories<br />
-                <strong>Pages:</strong> @Model.PageCount
-            </p>
-            @if (!string.IsNullOrEmpty(Model.PreviewLink))
+            <h3 style="color: var(--primary-blue); margin-bottom: 1.5rem;">
+                ✨ @Model.Title
+            </h3>
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <strong>✍️ Autor:</strong><br>
+                        <span class="text-muted">@Model.Author</span>
+                    </div>
+                    
+                    @if (!string.IsNullOrEmpty(Model.Publisher))
+                    {
+                        <div class="mb-3">
+                            <strong>🏢 Wydawca:</strong><br>
+                            <span class="text-muted">@Model.Publisher</span>
+                        </div>
+                    }
+                    
+                    @if (!string.IsNullOrEmpty(Model.PublishedDate))
+                    {
+                        <div class="mb-3">
+                            <strong>📅 Data publikacji:</strong><br>
+                            <span class="text-muted">@Model.PublishedDate</span>
+                        </div>
+                    }
+                </div>
+                <div class="col-md-6">
+                    @if (!string.IsNullOrEmpty(Model.ISBN))
+                    {
+                        <div class="mb-3">
+                            <strong>🔢 ISBN:</strong><br>
+                            <span class="text-muted">@Model.ISBN</span>
+                        </div>
+                    }
+                    
+                    @if (Model.PageCount > 0)
+                    {
+                        <div class="mb-3">
+                            <strong>📄 Liczba stron:</strong><br>
+                            <span class="text-muted">@Model.PageCount</span>
+                        </div>
+                    }
+                    
+                    @if (!string.IsNullOrEmpty(Model.Language))
+                    {
+                        <div class="mb-3">
+                            <strong>🌐 Język:</strong><br>
+                            <span class="text-muted">@Model.Language</span>
+                        </div>
+                    }
+                </div>
+            </div>
+            
+            @if (!string.IsNullOrEmpty(Model.Categories))
             {
-                <a href="@Model.PreviewLink" target="_blank" class="btn btn-outline-primary">Preview Book</a>
+                <div class="mb-3">
+                    <strong>📂 Kategorie:</strong><br>
+                    <span class="text-muted">@Model.Categories</span>
+                </div>
             }
-        </div>
-    </div>
-    
-    <div class="card">
-        <div class="card-body">
-            <h3 class="card-title">Review and Edit Details</h3>
-            <form asp-action="ConfirmImport" method="post">
-                <input type="hidden" asp-for="GoogleBookId" />
-                <input type="hidden" asp-for="ThumbnailUrl" />
-                <input type="hidden" asp-for="PreviewLink" />
-                
+            
+            @if (!string.IsNullOrEmpty(Model.Description))
+            {
                 <div class="mb-3">
-                    <label asp-for="Title" class="form-label">Title</label>
-                    <input asp-for="Title" class="form-control" required />
-                    <span asp-validation-for="Title" class="text-danger"></span>
-                </div>
-                
-                <div class="mb-3">
-                    <label asp-for="Author" class="form-label">Author</label>
-                    <input asp-for="Author" class="form-control" required />
-                    <span asp-validation-for="Author" class="text-danger"></span>
-                </div>
-                
-                <div class="mb-3">
-                    <label asp-for="Description" class="form-label">Description</label>
-                    <textarea asp-for="Description" class="form-control" rows="5"></textarea>
-                    <span asp-validation-for="Description" class="text-danger"></span>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label asp-for="TotalCopies" class="form-label">Number of Copies</label>
-                            <input asp-for="TotalCopies" class="form-control" type="number" min="1" required />
-                            <span asp-validation-for="TotalCopies" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label asp-for="ISBN" class="form-label">ISBN</label>
-                            <input asp-for="ISBN" class="form-control" />
-                            <span asp-validation-for="ISBN" class="text-danger"></span>
-                        </div>
+                    <strong>📝 Opis:</strong><br>
+                    <div class="text-muted" style="max-height: 150px; overflow-y: auto; padding: 1rem; background: rgba(102, 126, 234, 0.05); border-radius: 8px;">
+                        @Model.Description
                     </div>
                 </div>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label asp-for="Publisher" class="form-label">Publisher</label>
-                            <input asp-for="Publisher" class="form-control" />
-                            <span asp-validation-for="Publisher" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label asp-for="PublishedDate" class="form-label">Published Date</label>
-                            <input asp-for="PublishedDate" class="form-control" />
-                            <span asp-validation-for="PublishedDate" class="text-danger"></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label asp-for="PageCount" class="form-label">Page Count</label>
-                            <input asp-for="PageCount" class="form-control" type="number" min="0" />
-                            <span asp-validation-for="PageCount" class="text-danger"></span>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="mb-3">
-                            <label asp-for="Language" class="form-label">Language</label>
-                            <input asp-for="Language" class="form-control" />
-                            <span asp-validation-for="Language" class="text-danger"></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mb-3">
-                    <label asp-for="Categories" class="form-label">Categories</label>
-                    <input asp-for="Categories" class="form-control" />
-                    <span asp-validation-for="Categories" class="text-danger"></span>
-                </div>
-                
-                <div class="d-flex justify-content-between">
-                    <a asp-action="GoogleBooksSearch" class="btn btn-secondary">Back to Search</a>
-                    <button type="submit" class="btn btn-success">Import Book</button>
-                </div>
-            </form>
+            }
         </div>
     </div>
 </div>
 
+<div class="modern-card">
+    <h5 class="section-title">📋 Ustawienia importu</h5>
+    
+    <form asp-action="ConfirmImport" method="post">
+        <input type="hidden" asp-for="Title" />
+        <input type="hidden" asp-for="Author" />
+        <input type="hidden" asp-for="Description" />
+        <input type="hidden" asp-for="GoogleBookId" />
+        <input type="hidden" asp-for="ISBN" />
+        <input type="hidden" asp-for="Publisher" />
+        <input type="hidden" asp-for="PublishedDate" />
+        <input type="hidden" asp-for="PageCount" />
+        <input type="hidden" asp-for="Categories" />
+        <input type="hidden" asp-for="Language" />
+        <input type="hidden" asp-for="ThumbnailUrl" />
+        <input type="hidden" asp-for="PreviewLink" />
+        
+        <div class="modern-form-group">
+            <label class="modern-label">
+                📦 Liczba egzemplarzy
+            </label>
+            <input asp-for="TotalCopies" class="modern-input" type="number" min="1" value="1" />
+            <span asp-validation-for="TotalCopies" class="text-danger"></span>
+        </div>
+        
+        <div class="info-box">
+            <h6>ℹ️ Informacje:</h6>
+            <ul class="mb-0">
+                <li>Książka zostanie dodana do katalogu biblioteki</li>
+                <li>Możesz zmienić liczbę dostępnych egzemplarzy</li>
+                <li>Wszystkie dane zostały pobrane z Google Books</li>
+            </ul>
+        </div>
+        
+        <div class="d-flex gap-3 justify-content-center mt-4">
+            <button type="submit" class="modern-btn">
+                ✅ Potwierdź import
+            </button>
+            <a href="javascript:history.back()" class="modern-btn modern-btn-outline">
+                ❌ Anuluj
+            </a>
+        </div>
+    </form>
+</div>
+
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <partial name="_ValidationScriptsPartial" />
 } 

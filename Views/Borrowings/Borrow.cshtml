@@ -1,0 +1,128 @@
+@{
+    ViewData["Title"] = "Wypożycz książkę";
+    var book = ViewBag.Book as BibliotekaOnline.Models.Book;
+}
+
+<div class="modern-header">
+    <h2>📚 Wypożycz książkę</h2>
+    <p>Potwierdź wypożyczenie wybranej książki</p>
+</div>
+
+@if (TempData["Success"] != null)
+{
+    <div class="modern-alert modern-alert-success">
+        ✅ @TempData["Success"]
+    </div>
+}
+
+@if (TempData["Error"] != null)
+{
+    <div class="modern-alert modern-alert-danger">
+        ❌ @TempData["Error"]
+    </div>
+}
+
+<div class="modern-card">
+    <h4 class="section-title">📖 Szczegóły książki</h4>
+    
+    <div class="row">
+        <div class="col-md-3 text-center">
+            @if (!string.IsNullOrEmpty(book?.ThumbnailUrl))
+            {
+                <img src="@book.ThumbnailUrl" alt="@book.Title" class="img-fluid rounded shadow" style="max-height: 250px;">
+            }
+            else
+            {
+                <div class="d-flex align-items-center justify-content-center rounded shadow" style="height: 250px; width: 180px; background: linear-gradient(45deg, var(--light-blue), var(--primary-blue)); color: white; margin: 0 auto;">
+                    <span style="font-size: 2rem;">📖</span>
+                </div>
+            }
+        </div>
+        <div class="col-md-9">
+            <h3 style="color: var(--primary-blue); margin-bottom: 1rem;">
+                @book?.Title
+            </h3>
+            
+            <div class="mb-3">
+                <strong>✍️ Autor:</strong><br>
+                <span class="text-muted">@book?.Author</span>
+            </div>
+            
+            @if (!string.IsNullOrEmpty(book?.Publisher))
+            {
+                <div class="mb-3">
+                    <strong>🏢 Wydawca:</strong><br>
+                    <span class="text-muted">@book.Publisher</span>
+                </div>
+            }
+            
+            @if (!string.IsNullOrEmpty(book?.Description))
+            {
+                <div class="mb-3">
+                    <strong>📝 Opis:</strong><br>
+                    <div class="text-muted" style="max-height: 100px; overflow-y: auto;">
+                        @book.Description
+                    </div>
+                </div>
+            }
+            
+            <div class="mb-3">
+                <strong>📦 Dostępne egzemplarze:</strong>
+                <span class="modern-btn modern-btn-small modern-btn-success">@book?.TotalCopies</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modern-card">
+    <h5 class="section-title">📅 Szczegóły wypożyczenia</h5>
+    
+    <div class="info-box">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="me-2">📅</span>
+                    <strong>Data wypożyczenia:</strong>
+                </div>
+                <span>@DateTime.Now.ToString("dd.MM.yyyy")</span>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="me-2">⏰</span>
+                    <strong>Termin zwrotu:</strong>
+                </div>
+                <span>@DateTime.Now.AddDays(14).ToString("dd.MM.yyyy")</span>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex align-items-center mb-2">
+                    <span class="me-2">📊</span>
+                    <strong>Okres wypożyczenia:</strong>
+                </div>
+                <span>14 dni</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="warning-box">
+        <h6>⚠️ Ważne informacje:</h6>
+        <ul class="mb-0">
+            <li>Standardowy okres wypożyczenia to 14 dni</li>
+            <li>Pamiętaj o zwrocie książki w terminie</li>
+            <li>Za przetrzymanie książki mogą zostać naliczone opłaty</li>
+            <li>Możesz sprawdzić swoje wypożyczenia w sekcji "Moje wypożyczenia"</li>
+        </ul>
+    </div>
+
+    <form method="post" asp-action="Borrow">
+        <input type="hidden" name="bookId" value="@book?.Id" />
+        
+        <div class="d-flex gap-3 justify-content-center mt-4">
+            <button type="submit" class="modern-btn" onclick="return confirm('Czy na pewno chcesz wypożyczyć tę książkę?')">
+                ✅ Potwierdź wypożyczenie
+            </button>
+            <a href="@Url.Action("Details", "Books", new { id = book?.Id })" class="modern-btn modern-btn-outline">
+                ❌ Anuluj
+            </a>
+        </div>
+    </form>
+</div> 

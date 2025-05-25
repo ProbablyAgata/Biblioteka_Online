@@ -66,9 +66,8 @@ namespace BibliotekaOnline.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User created a new account with password.");
+                    _logger.LogInformation("Użytkownik utworzył nowe konto z hasłem.");
                     
-                    // Add the user to the "User" role
                     await _userManager.AddToRoleAsync(user, "User");
 
                     await _signInManager.SignInAsync(user, isPersistent: false);
@@ -80,7 +79,6 @@ namespace BibliotekaOnline.Areas.Identity.Pages.Account
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return Page();
         }
     }

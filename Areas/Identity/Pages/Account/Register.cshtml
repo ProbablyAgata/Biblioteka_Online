@@ -5,31 +5,89 @@
     ViewData["Title"] = "Rejestracja";
 }
 
-<h1>@ViewData["Title"]</h1>
+<div class="modern-header">
+    <h2>✏️ @ViewData["Title"]</h2>
+    <p>Dołącz do naszej społeczności miłośników książek</p>
+</div>
 
 <div class="row">
-    <div class="col-md-4">
-        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h2>Utwórz nowe konto.</h2>
-            <hr />
-            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
-                <label asp-for="Input.Email">Email</label>
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
+    <div class="col-lg-6 mx-auto">
+        <div class="modern-card">
+            <div class="text-center mb-4">
+                <h4>Utwórz swoje konto</h4>
             </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.Password">Hasło</label>
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            
+            <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <div asp-validation-summary="ModelOnly" class="modern-alert modern-alert-danger" role="alert"></div>
+                
+                <div class="modern-form-group">
+                    <label asp-for="Input.Email" class="modern-label">
+                        📧 Email
+                    </label>
+                    <input asp-for="Input.Email" class="modern-input" autocomplete="username" aria-required="true" placeholder="Wprowadź swój adres email" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                
+                <div class="modern-form-group">
+                    <label asp-for="Input.Password" class="modern-label">
+                        🔒 Hasło
+                    </label>
+                    <input asp-for="Input.Password" class="modern-input" autocomplete="new-password" aria-required="true" placeholder="Wprowadź hasło" type="password" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                
+                <div class="modern-form-group">
+                    <label asp-for="Input.ConfirmPassword" class="modern-label">
+                        ✅ Potwierdź hasło
+                    </label>
+                    <input asp-for="Input.ConfirmPassword" class="modern-input" autocomplete="new-password" aria-required="true" placeholder="Powtórz hasło" type="password" />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                
+                <button id="registerSubmit" type="submit" class="modern-btn w-100 mb-3">
+                    🚀 Zarejestruj się
+                </button>
+                
+                <div class="text-center">
+                    <p>
+                        <a asp-page="./Login" asp-route-returnUrl="@Model.ReturnUrl" class="modern-nav-link">
+                            🔑 Masz już konto? Zaloguj się
+                        </a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        
+        <div class="modern-card">
+            <div class="success-box">
+                <h5>🎯 Korzyści z rejestracji</h5>
+                <div class="row text-center">
+                    <div class="col-4">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📚</div>
+                        <p><small>Dostęp do tysięcy książek</small></p>
+                    </div>
+                    <div class="col-4">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">⚡</div>
+                        <p><small>Szybkie wypożyczenia</small></p>
+                    </div>
+                    <div class="col-4">
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔒</div>
+                        <p><small>Bezpieczne konto</small></p>
+                    </div>
+                </div>
             </div>
-            <div class="form-floating mb-3">
-                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="password" />
-                <label asp-for="Input.ConfirmPassword">Potwierdź hasło</label>
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+        </div>
+        
+        <div class="modern-card">
+            <div class="info-box">
+                <h6>📋 Wymagania hasła:</h6>
+                <ul class="mb-0">
+                    <li>Co najmniej 6 znaków</li>
+                    <li>Małe i wielkie litery</li>
+                    <li>Cyfry dla bezpieczeństwa</li>
+                </ul>
             </div>
-            <button id="registerSubmit" type="submit" class="w-100 btn btn-lg btn-primary">Zarejestruj się</button>
-        </form>
+        </div>
     </div>
 </div>
 

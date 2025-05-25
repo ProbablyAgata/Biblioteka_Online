@@ -16,6 +16,9 @@ namespace BibliotekaOnline.Models
         [Required]
         public DateTime BorrowDate { get; set; }
 
+        [Required]
+        public DateTime DueDate { get; set; }
+
         public DateTime? ReturnDate { get; set; }
 
         [Required]

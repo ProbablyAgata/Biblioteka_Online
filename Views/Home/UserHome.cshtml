@@ -4,81 +4,195 @@
     var recentlyReturned = ViewBag.RecentlyReturned as List<BibliotekaOnline.Models.Borrowing> ?? new();
 }
 
-<h2>Witaj w panelu użytkownika!</h2>
+<div class="modern-header">
+    <h2><span class="emoji-icon">🏠</span>Panel użytkownika</h2>
+    <p>Zarządzaj swoimi wypożyczeniami i odkrywaj nowe książki</p>
+</div>
 
-<section>
-    <h3>Twoje aktualne wypożyczenia</h3>
-    @if (activeBorrowings.Count > 0)
-    {
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Tytuł</th>
-                    <th>Autor</th>
-                    <th>Data wypożyczenia</th>
-                    <th>Termin zwrotu</th>
-                    <th>Akcja</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var borrowing in activeBorrowings)
-                {
-                    <tr>
-                        <td>@borrowing.Book.Title</td>
-                        <td>@borrowing.Book.Author</td>
-                        <td>@borrowing.BorrowDate.ToString("yyyy-MM-dd")</td>
-                        <td>@borrowing.ReturnDate?.ToString("yyyy-MM-dd")</td>
-                        <td>
-                            <form asp-controller="Borrowings" asp-action="RequestExtension" method="post" style="display:inline;">
-                                <input type="hidden" name="borrowingId" value="@borrowing.Id" />
-                                <button type="submit" class="btn btn-warning btn-sm">Poproś o wydłużenie</button>
-                            </form>
-                        </td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
-    else
-    {
-        <p>Nie masz aktualnie żadnych wypożyczeń.</p>
-    }
-</section>
+@if (TempData["Success"] != null)
+{
+    <div class="modern-alert modern-alert-success">
+        ✅ @TempData["Success"]
+    </div>
+}
 
-<section>
-    <h3>Ostatnio zwrócone książki</h3>
-    @if (recentlyReturned.Count > 0)
-    {
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Tytuł</th>
-                    <th>Data wypożyczenia</th>
-                    <th>Data zwrotu</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var borrowing in recentlyReturned)
-                {
-                    <tr>
-                        <td>@borrowing.Book.Title</td>
-                        <td>@borrowing.BorrowDate.ToString("yyyy-MM-dd")</td>
-                        <td>@borrowing.ReturnDate?.ToString("yyyy-MM-dd")</td>
-                    </tr>
-                }
-            </tbody>
-        </table>
-    }
-    else
-    {
-        <p>Nie masz jeszcze historii zwrotów.</p>
-    }
-</section>
+@if (TempData["Error"] != null)
+{
+    <div class="modern-alert modern-alert-danger">
+        ❌ @TempData["Error"]
+    </div>
+}
 
-<section class="mt-4">
-    <a class="btn btn-primary" href="@Url.Action("Index", "Books")">Zarezerwuj książkę (przeglądaj katalog)</a>
-    <a class="btn btn-secondary" href="/Identity/Account/Manage">Edycja konta</a>
-    <form asp-controller="Account" asp-action="Logout" method="post" style="display:inline;">
-        <button type="submit" class="btn btn-danger">Wyloguj</button>
-    </form>
-</section>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="modern-card">
+            <h3 class="section-title">
+                <span class="emoji-icon">📚</span>Twoje aktualne wypożyczenia
+            </h3>
+            @if (activeBorrowings.Count > 0)
+            {
+                <div class="table-responsive">
+                    <table class="table modern-table">
+                        <thead>
+                            <tr>
+                                <th><span class="emoji-icon-small">📖</span>Tytuł</th>
+                                <th><span class="emoji-icon-small">✍️</span>Autor</th>
+                                <th><span class="emoji-icon-small">📅</span>Data wypożyczenia</th>
+                                <th><span class="emoji-icon-small">⏰</span>Termin zwrotu</th>
+                                <th><span class="emoji-icon-small">⚙️</span>Akcja</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var borrowing in activeBorrowings)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            @if (!string.IsNullOrEmpty(borrowing.Book?.ThumbnailUrl))
+                                            {
+                                                <img src="@borrowing.Book.ThumbnailUrl" alt="@borrowing.Book.Title" class="me-3 rounded" style="height: 50px; width: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                            }
+                                            else
+                                            {
+                                                <div class="me-3 d-flex align-items-center justify-content-center rounded" style="height: 50px; width: 40px; background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue)); color: white; font-size: 1.2rem;">
+                                                    📖
+                                                </div>
+                                            }
+                                            <div>
+                                                <strong>@borrowing.Book?.Title</strong>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>@borrowing.Book?.Author</td>
+                                    <td>@borrowing.BorrowDate.ToString("dd.MM.yyyy")</td>
+                                    <td>
+                                        @borrowing.DueDate.ToString("dd.MM.yyyy")
+                                        @if (borrowing.DueDate < DateTime.Now)
+                                        {
+                                            <br><small class="text-danger">⚠️ Preterminowane</small>
+                                        }
+                                        else if (borrowing.DueDate.AddDays(-3) <= DateTime.Now)
+                                        {
+                                            <br><small class="text-warning">⏰ Zbliża się termin</small>
+                                        }
+                                    </td>
+                                    <td>
+                                        <form asp-controller="Borrowings" asp-action="RequestExtension" method="post" style="display:inline;">
+                                            <input type="hidden" name="borrowingId" value="@borrowing.Id" />
+                                            <button type="submit" class="modern-btn modern-btn-small modern-btn-outline" onclick="return confirm('Czy chcesz przedłużyć wypożyczenie o 7 dni?')">
+                                                <span class="emoji-icon-small">🔄</span>Przedłuż
+                                            </button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="info-box text-center">
+                    <span class="emoji-icon-large">📭</span>
+                    <h5>Brak aktywnych wypożyczeń</h5>
+                    <p>Nie masz aktualnie żadnych wypożyczeń. Sprawdź nasz katalog i znajdź coś interesującego!</p>
+                    <a asp-controller="Books" asp-action="Index" class="modern-btn">
+                        <span class="emoji-icon">🔍</span>Przeglądaj katalog
+                    </a>
+                </div>
+            }
+        </div>
+
+        <div class="modern-card">
+            <h3 class="section-title">
+                <span class="emoji-icon">📋</span>Historia zwrotów
+            </h3>
+            @if (recentlyReturned.Count > 0)
+            {
+                <div class="table-responsive">
+                    <table class="table modern-table">
+                        <thead>
+                            <tr>
+                                <th><span class="emoji-icon-small">📖</span>Książka</th>
+                                <th><span class="emoji-icon-small">📅</span>Data wypożyczenia</th>
+                                <th><span class="emoji-icon-small">✅</span>Data zwrotu</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var borrowing in recentlyReturned)
+                            {
+                                <tr>
+                                    <td>
+                                        <div class="d-flex align-items-center">
+                                            @if (!string.IsNullOrEmpty(borrowing.Book?.ThumbnailUrl))
+                                            {
+                                                <img src="@borrowing.Book.ThumbnailUrl" alt="@borrowing.Book.Title" class="me-3 rounded" style="height: 40px; width: auto; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                                            }
+                                            else
+                                            {
+                                                <div class="me-3 d-flex align-items-center justify-content-center rounded" style="height: 40px; width: 30px; background: linear-gradient(45deg, var(--primary-blue), var(--secondary-blue)); color: white; font-size: 1rem;">
+                                                    📖
+                                                </div>
+                                            }
+                                            <div>
+                                                <strong>@borrowing.Book?.Title</strong>
+                                                <br><small class="text-muted">@borrowing.Book?.Author</small>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>@borrowing.BorrowDate.ToString("dd.MM.yyyy")</td>
+                                    <td>@borrowing.ReturnDate?.ToString("dd.MM.yyyy")</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="info-box text-center">
+                    <span class="emoji-icon-large">📜</span>
+                    <h5>Brak historii zwrotów</h5>
+                    <p>Nie masz jeszcze historii zwrotów. Wypożycz pierwszą książkę, aby rozpocząć swoją biblioteczną przygodę!</p>
+                </div>
+            }
+        </div>
+
+        <div class="modern-card">
+            <h3 class="section-title">
+                <span class="emoji-icon">🎯</span>Szybkie akcje
+            </h3>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="modern-card modern-card-small text-center hover-glow">
+                        <span class="emoji-icon-large">📚</span>
+                        <h6 class="mt-2 mb-3">Katalog książek</h6>
+                        <a class="modern-btn modern-btn-small w-100" href="@Url.Action("Index", "Books")">
+                            <span class="emoji-icon-small">🔍</span>Przeglądaj
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="modern-card modern-card-small text-center hover-glow">
+                        <span class="emoji-icon-large">⚙️</span>
+                        <h6 class="mt-2 mb-3">Zarządzanie kontem</h6>
+                        <a class="modern-btn modern-btn-small modern-btn-outline w-100" href="/Identity/Account/Manage">
+                            <span class="emoji-icon-small">🔧</span>Edytuj konto
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="modern-card modern-card-small text-center hover-glow">
+                        <span class="emoji-icon-large">🚪</span>
+                        <h6 class="mt-2 mb-3">Wyloguj się</h6>
+                        <form asp-controller="Account" asp-action="Logout" method="post" class="w-100">
+                            <button type="submit" class="modern-btn modern-btn-danger modern-btn-small w-100">
+                                <span class="emoji-icon-small">👋</span>Wyloguj
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

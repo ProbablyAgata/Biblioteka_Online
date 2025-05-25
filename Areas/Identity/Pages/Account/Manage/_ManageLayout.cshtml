@@ -1,0 +1,34 @@
+@{
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="modern-header">
+    <h2>⚙️ Zarządzanie kontem</h2>
+    <p>Ustawienia profilu i bezpieczeństwa</p>
+</div>
+
+<div class="row">
+    <div class="col-lg-3">
+        <div class="modern-card">
+            <h5 class="section-title">📋 Menu zarządzania</h5>
+            <nav class="manage-nav">
+                <a asp-page="./Index" class="manage-nav-link @(ViewData["ActivePage"]?.ToString() == "Profile" ? "active" : "")">
+                    <span class="emoji-icon">👤</span>Profil
+                </a>
+                <a asp-page="./ChangePassword" class="manage-nav-link @(ViewData["ActivePage"]?.ToString() == "ChangePassword" ? "active" : "")">
+                    <span class="emoji-icon">🔒</span>Zmień hasło
+                </a>
+                <a asp-page="./PersonalData" class="manage-nav-link @(ViewData["ActivePage"]?.ToString() == "PersonalData" ? "active" : "")">
+                    <span class="emoji-icon">📊</span>Dane osobowe
+                </a>
+            </nav>
+        </div>
+    </div>
+    <div class="col-lg-9">
+        @RenderBody()
+    </div>
+</div>
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+} 

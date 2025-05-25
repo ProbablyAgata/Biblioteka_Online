@@ -1,0 +1,15 @@
+@model string
+
+@if (!String.IsNullOrEmpty(Model))
+{
+    var isError = Model.StartsWith("Error") || Model.Contains("błąd") || Model.Contains("niepowodzenie") || Model.Contains("failed") || Model.Contains("invalid");
+    var statusClass = isError ? "modern-alert-danger" : "modern-alert-success";
+    var emoji = isError ? "❌" : "✅";
+    
+    <div class="modern-alert @statusClass alert-dismissible d-flex align-items-center" role="alert">
+        <div class="flex-grow-1">
+            @emoji @Model
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Zamknij"></button>
+    </div>
+} 

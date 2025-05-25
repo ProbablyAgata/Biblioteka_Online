@@ -1,0 +1,66 @@
+@page
+@using BibliotekaOnline.Areas.Identity.Pages.Account.Manage
+@model PersonalDataModel
+@{
+    ViewData["Title"] = "Dane osobowe";
+    ViewData["ActivePage"] = "PersonalData";
+    Layout = "_ManageLayout";
+}
+
+
+        
+        <div class="modern-card">
+            <div class="info-box">
+                <h5 class="section-title">
+                    ℹ️ Informacje o danych
+                </h5>
+                <p class="mb-3">Twoje konto zawiera dane osobowe, które nam przekazałeś. Ta strona pozwala Ci pobrać lub usunąć te dane zgodnie z przepisami RODO.</p>
+                
+                <div class="d-flex flex-wrap gap-2">
+                    <form id="download-data" asp-page-handler="DownloadPersonalData" method="post" class="d-inline">
+                        <button class="modern-btn" type="submit">
+                            📥 Pobierz dane
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modern-card">
+            <div class="warning-box">
+                <h5 class="mb-3">⚠️ Strefa niebezpieczna</h5>
+                <p class="mb-3">
+                    <strong>Usunięcie tych danych spowoduje trwałe usunięcie Twojego konta i nie będzie można go odzyskać.</strong>
+                </p>
+                <p class="mb-0">Ta operacja jest nieodwracalna i spowoduje:</p>
+                <ul class="mt-2 mb-3">
+                    <li>Usunięcie wszystkich Twoich danych</li>
+                    <li>Utratę historii wypożyczeń</li>
+                    <li>Niemożność ponownego logowania</li>
+                </ul>
+                
+                <form id="delete-user" asp-page-handler="DeletePersonalData" method="post">
+                    <input asp-for="RequirePassword" type="hidden" value="@Model.RequirePassword" />
+                    @if (Model.RequirePassword)
+                    {
+                        <div class="modern-form-group">
+                            <label asp-for="Input.Password" class="modern-label">
+                                🔒 Potwierdź hasłem
+                            </label>
+                            <input asp-for="Input.Password" class="modern-input" autocomplete="current-password" aria-required="true" placeholder="Wprowadź swoje hasło" type="password" />
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                            <small class="text-muted">Wprowadź hasło aby potwierdzić usunięcie konta</small>
+                        </div>
+                    }
+                    <div class="mt-3">
+                        <button class="modern-btn modern-btn-danger" type="submit" onclick="return confirm('Czy na pewno chcesz usunąć swoje konto? Ta operacja jest nieodwracalna!');">
+                            💀 Usuń dane i zamknij konto
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+} 

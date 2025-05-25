@@ -1,58 +1,128 @@
 @model BibliotekaOnline.Models.GoogleBooks.GoogleBookApiResponse
 
 @{
-    ViewData["Title"] = "Search Google Books";
+    ViewData["Title"] = "Wyszukaj książki w Google Books";
 }
 
-<div class="container">
-    <h1>Search Google Books</h1>
-    
-    <form method="get" action="@Url.Action("GoogleBooksSearch")" class="mb-4">
-        <div class="input-group">
-            <input type="text" name="query" class="form-control" placeholder="Search by title, author, or ISBN" value="@Context.Request.Query["query"]" required />
-            <button type="submit" class="btn btn-primary">Search</button>
+<div class="modern-header">
+    <h2>🔍 Wyszukaj książki</h2>
+    <p>Znajdź i dodaj nowe książki do biblioteki z ogromnej bazy Google Books</p>
+</div>
+
+<div class="modern-card">
+    <div class="google-books-container">
+        <h4 class="section-title text-center">
+            🔎 Wyszukaj książki
+        </h4>
+        
+        <form method="get" action="@Url.Action("GoogleBooksSearch")" class="mb-4">
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="text" name="query" class="google-search-input" placeholder="Wyszukaj po tytule, autorze lub ISBN..." value="@ViewBag.Query" required />
+                </div>
+                <div class="col-md-3">
+                    <button type="submit" class="google-search-btn w-100">
+                        🚀 Szukaj
+                    </button>
+                </div>
+            </div>
+        </form>
+        
+        <div class="info-box mt-3">
+            <h6>💡 Wskazówki wyszukiwania:</h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="me-2">📖</span>
+                        <span>Tytuł książki</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="me-2">✍️</span>
+                        <span>Nazwisko autora</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="me-2">🔢</span>
+                        <span>Numer ISBN</span>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
-    
-    @if (Model?.Items != null && Model.Items.Any())
-    {
-        <h2>Found @Model.TotalItems results</h2>
+    </div>
+</div>
+
+@if (Model?.Items != null && Model.Items.Any())
+{
+    <div class="modern-card">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="section-title">
+                📚 Wyniki wyszukiwania
+            </h4>
+            <span class="modern-btn modern-btn-small modern-btn-outline">
+                Znaleziono: @Model.TotalItems
+            </span>
+        </div>
+        
         <div class="row">
             @foreach (var book in Model.Items)
             {
-                <div class="col-md-6 mb-4">
-                    <div class="card h-100">
+                <div class="col-lg-6 mb-4">
+                    <div class="modern-card modern-card-small hover-glow">
                         <div class="row g-0">
-                            <div class="col-md-4 text-center py-3">
+                            <div class="col-md-4 text-center">
                                 @if (!string.IsNullOrEmpty(book.VolumeInfo.ImageLinks?.Thumbnail))
                                 {
-                                    <img src="@book.VolumeInfo.ImageLinks.Thumbnail" class="img-fluid rounded" alt="@book.VolumeInfo.Title" style="max-height: 200px;">
+                                    <img src="@book.VolumeInfo.ImageLinks.Thumbnail" class="img-fluid rounded shadow-sm" alt="@book.VolumeInfo.Title" style="max-height: 180px; max-width: 120px;">
                                 }
                                 else
                                 {
-                                    <div class="bg-light d-flex align-items-center justify-content-center rounded" style="height: 200px;">
-                                        <span class="text-muted">No image</span>
+                                    <div class="d-flex align-items-center justify-content-center rounded shadow-sm" style="height: 180px; width: 120px; background: linear-gradient(45deg, var(--light-blue), var(--primary-blue)); color: white; margin: 0 auto;">
+                                        <span style="font-size: 2rem;">📖</span>
                                     </div>
                                 }
                             </div>
                             <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">@book.VolumeInfo.Title</h5>
-                                    <p class="card-text">
-                                        <strong>Author:</strong> @(string.Join(", ", book.VolumeInfo.Authors ?? new List<string>()))<br />
-                                        <strong>Publisher:</strong> @book.VolumeInfo.Publisher<br />
-                                        <strong>Published:</strong> @book.VolumeInfo.PublishedDate<br />
-                                        @if (book.VolumeInfo.IndustryIdentifiers != null && book.VolumeInfo.IndustryIdentifiers.Any())
-                                        {
-                                            <strong>ISBN:</strong> @book.VolumeInfo.IndustryIdentifiers.FirstOrDefault()?.Identifier<br />
-                                        }
-                                    </p>
-                                    <div class="d-flex justify-content-between align-items-center mt-3">
-                                        <a href="@Url.Action("ImportFromGoogleBooks", new { id = book.Id })" class="btn btn-success">Import</a>
-                                        @if (!string.IsNullOrEmpty(book.AccessInfo?.WebReaderLink))
-                                        {
-                                            <a href="@book.AccessInfo.WebReaderLink" target="_blank" class="btn btn-outline-primary">Preview</a>
-                                        }
+                                <div class="ps-3">
+                                    <h6 class="mb-2" style="color: var(--primary-blue); font-weight: 600;">
+                                        @book.VolumeInfo.Title
+                                    </h6>
+                                    
+                                    <div class="mb-2">
+                                        <small><strong>✍️ Autor:</strong></small><br>
+                                        <span class="text-muted">@(string.Join(", ", book.VolumeInfo.Authors ?? new List<string>()))</span>
+                                    </div>
+                                    
+                                    @if (!string.IsNullOrEmpty(book.VolumeInfo.Publisher))
+                                    {
+                                        <div class="mb-2">
+                                            <small><strong>🏢 Wydawca:</strong></small><br>
+                                            <span class="text-muted">@book.VolumeInfo.Publisher</span>
+                                        </div>
+                                    }
+                                    
+                                    @if (!string.IsNullOrEmpty(book.VolumeInfo.PublishedDate))
+                                    {
+                                        <div class="mb-2">
+                                            <small><strong>📅 Data publikacji:</strong></small><br>
+                                            <span class="text-muted">@book.VolumeInfo.PublishedDate</span>
+                                        </div>
+                                    }
+                                    
+                                    @if (book.VolumeInfo.IndustryIdentifiers != null && book.VolumeInfo.IndustryIdentifiers.Any())
+                                    {
+                                        <div class="mb-3">
+                                            <small><strong>🔢 ISBN:</strong></small><br>
+                                            <span class="text-muted">@book.VolumeInfo.IndustryIdentifiers.FirstOrDefault()?.Identifier</span>
+                                        </div>
+                                    }
+                                    
+                                    <div class="d-flex gap-2 flex-wrap">
+                                        <a href="@Url.Action("ImportFromGoogleBooks", new { id = book.Id })" class="modern-btn modern-btn-small modern-btn-success">
+                                            ➕ Importuj
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -61,11 +131,46 @@
                 </div>
             }
         </div>
-    }
-    else if (!string.IsNullOrEmpty(Context.Request.Query["query"]))
-    {
-        <div class="alert alert-info">
-            No books found matching your search criteria.
+        
+        @if (!string.IsNullOrEmpty(ViewBag.Query))
+        {
+            <div class="text-center mt-4">
+                <div class="d-flex justify-content-center gap-2">
+                    @if (ViewBag.StartIndex > 0)
+                    {
+                        <a href="@Url.Action("GoogleBooksSearch", new { query = ViewBag.Query, startIndex = Math.Max(0, ViewBag.StartIndex - 10) })" class="modern-btn modern-btn-outline">
+                            ← Poprzednie
+                        </a>
+                    }
+                    
+                    @if (Model.Items.Count >= 10)
+                    {
+                        <a href="@Url.Action("GoogleBooksSearch", new { query = ViewBag.Query, startIndex = ViewBag.StartIndex + 10 })" class="modern-btn">
+                            📚 Więcej wyników →
+                        </a>
+                    }
+                </div>
+            </div>
+        }
+        
+        <div class="text-center mt-4">
+            <div class="info-box">
+                <h6>📋 Instrukcje:</h6>
+                <p class="mb-0">Kliknij <strong>"Importuj"</strong> aby dodać książkę do biblioteki</p>
+            </div>
         </div>
-    }
-</div> 
+    </div>
+}
+else if (!string.IsNullOrEmpty(ViewBag.Query))
+{
+    <div class="modern-card">
+        <div class="warning-box text-center">
+            <h5>📭 Brak wyników</h5>
+            <p class="mb-3">Nie znaleziono książek odpowiadających Twoim kryteriom wyszukiwania.</p>
+            <div class="d-flex align-items-center justify-content-center">
+                <span class="me-2">💡</span>
+                <small>Spróbuj użyć innych słów kluczowych lub sprawdź pisownię</small>
+            </div>
+        </div>
+    </div>
+} 

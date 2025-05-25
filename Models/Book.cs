@@ -14,7 +14,7 @@ namespace BibliotekaOnline.Models
         [StringLength(100)]
         public string Author { get; set; } = string.Empty;
 
-        [StringLength(1000)]
+        [StringLength(5000)]
         public string Description { get; set; } = string.Empty;
 
         [Required]
