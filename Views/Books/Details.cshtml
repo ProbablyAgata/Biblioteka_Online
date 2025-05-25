@@ -58,13 +58,6 @@
             <div class="mt-4">
                 <p>Dostępne kopie: <span class="badge bg-primary">@Model.TotalCopies</span></p>
                 
-                @if (!string.IsNullOrEmpty(Model.PreviewLink))
-                {
-                    <a href="@Model.PreviewLink" class="btn btn-outline-primary" target="_blank">
-                        <i class="bi bi-book"></i> Preview Book
-                    </a>
-                }
-                
                 <a asp-controller="Borrowings" asp-action="Create" asp-route-bookId="@Model.Id" class="btn btn-success">
                     <i class="bi bi-bookmark-plus"></i> Wypożycz
                 </a>
