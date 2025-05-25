@@ -1,0 +1,121 @@
+[
+  {
+    "ContainingType": "BibliotekaOnline.Controllers.Api.GoogleBooksController",
+    "Method": "GetById",
+    "RelativePath": "api/GoogleBooks/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BibliotekaOnline.Models.GoogleBooks.GoogleBookItem",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BibliotekaOnline.Controllers.Api.GoogleBooksController",
+    "Method": "ImportBook",
+    "RelativePath": "api/GoogleBooks/import/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "totalCopies",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BibliotekaOnline.Models.Book",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BibliotekaOnline.Controllers.Api.GoogleBooksController",
+    "Method": "SearchByIsbn",
+    "RelativePath": "api/GoogleBooks/isbn/{isbn}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "isbn",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "maxResults",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BibliotekaOnline.Models.GoogleBooks.GoogleBookApiResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BibliotekaOnline.Controllers.Api.GoogleBooksController",
+    "Method": "Search",
+    "RelativePath": "api/GoogleBooks/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "query",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "maxResults",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BibliotekaOnline.Models.GoogleBooks.GoogleBookApiResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

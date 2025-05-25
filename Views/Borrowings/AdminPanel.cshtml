@@ -21,7 +21,10 @@
     {
         <tr>
             <td>@item.User?.Email</td>
-            <td>@item.Book?.Title</td>
+                <td>
+                    <a href="@Url.Action("Details", "Books", new { id = item.Book?.Id })" class="text-decoration-none">
+                        <strong>@(item.Book?.Title ?? "Brak tytułu")</strong>
+                </td>
             <td>@(item.ReturnDate != null ? item.ReturnDate.Value.ToShortDateString() : "")</td>
             <td>
                 <span class="badge @(item.Returned ? "bg-success" : "bg-primary")" style="padding: 8px 12px; border-radius: 12px;">

@@ -38,7 +38,11 @@
                             @foreach (var item in ViewBag.ActiveBorrowings)
                             {
                                 <tr>
-                                    <td><strong>@(item.Book?.Title ?? "Brak tytułu")</strong></td>
+                                    <td>
+                                        <a href="@Url.Action("Details", "Books", new { id = item.Book?.Id })" class="text-decoration-none">
+                                            <strong>@(item.Book?.Title ?? "Brak tytułu")</strong>
+                                        </a>
+                                    </td>
                                     <td>@item.BorrowDate.ToShortDateString()</td>
                                     <td>
                                         @if(item.ReturnDate.HasValue)
@@ -89,7 +93,9 @@
                             <div style="display: flex; align-items: center;">
                                 <span style="font-size: 1.2rem; margin-right: 10px;">📕</span>
                                 <div>
-                                    <strong>@(item.Book?.Title ?? "Brak tytułu")</strong>
+                                    <a href="@Url.Action("Details", "Books", new { id = item.Book?.Id })" class="text-decoration-none">
+                                        <strong>@(item.Book?.Title ?? "Brak tytułu")</strong>
+                                    </a>
                                     <div><small class="text-muted">Zwrócono: @(item.ReturnDate.HasValue ? item.ReturnDate.Value.ToShortDateString() : "-")</small></div>
                                 </div>
                             </div>

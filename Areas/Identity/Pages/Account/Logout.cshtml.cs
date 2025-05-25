@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -5,6 +6,7 @@ using BibliotekaOnline.Models;
 
 namespace BibliotekaOnline.Areas.Identity.Pages.Account
 {
+    [AllowAnonymous]
     public class LogoutModel : PageModel
     {
         private readonly SignInManager<User> _signInManager;

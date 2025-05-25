@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAF61F1-7940-507C-5801-E8A509C82D30}|Biblioteka_online.csproj|c:\\users\\laura\\desktop\\biblioteka-pz\\biblioteka_online\\views\\borrowings\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAF61F1-7940-507C-5801-E8A509C82D30}|Biblioteka_online.csproj|solutionrelative:views\\borrowings\\adminpanel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAF61F1-7940-507C-5801-E8A509C82D30}|Biblioteka_online.csproj|c:\\users\\laura\\desktop\\biblioteka-pz\\biblioteka_online\\views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EDAF61F1-7940-507C-5801-E8A509C82D30}|Biblioteka_online.csproj|solutionrelative:views\\books\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDAF61F1-7940-507C-5801-E8A509C82D30}|Biblioteka_online.csproj|c:\\users\\laura\\desktop\\biblioteka-pz\\biblioteka_online\\data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDAF61F1-7940-507C-5801-E8A509C82D30}|Biblioteka_online.csproj|solutionrelative:data\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminPanel.cshtml",
+              "DocumentMoniker": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\Views\\Borrowings\\AdminPanel.cshtml",
+              "RelativeDocumentMoniker": "Views\\Borrowings\\AdminPanel.cshtml",
+              "ToolTip": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\Views\\Borrowings\\AdminPanel.cshtml",
+              "RelativeToolTip": "Views\\Borrowings\\AdminPanel.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T10:07:01.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "Data\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-25T09:39:44.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\Views\\Books\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\Details.cshtml",
+              "ToolTip": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\Views\\Books\\Details.cshtml",
+              "RelativeToolTip": "Views\\Books\\Details.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAACQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-25T09:35:55.584Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

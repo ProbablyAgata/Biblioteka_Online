@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace BibliotekaOnline.Models
 {
-    public class RegisterModel
+    public class RegisterViewModel
     {
         [Required(ErrorMessage = "Email jest wymagany")]
         [EmailAddress(ErrorMessage = "Nieprawidłowy format adresu email")]

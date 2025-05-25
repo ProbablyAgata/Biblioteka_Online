@@ -14,26 +14,46 @@
 </head>
 <body>
     <header style="background:linear-gradient(135deg, #4287f5, #0056b3); color:#fff; padding:1rem 0; box-shadow: 0 4px 15px rgba(66, 135, 245, 0.2);">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h2 style="margin:0; color:#fff; font-weight: 700; display: flex; align-items: center;">
-                <span style="font-size: 1.5rem; margin-right: 8px;">⚙️</span> Panel administratora
-            </h2>
-            <div class="d-flex align-items-center">
-                <nav class="me-4">
-                    <a href="/Home/AdminHome" class="btn me-2" style="background-color: rgba(255, 255, 255, 0.2); color: white; border-radius:25px; font-weight:600; padding: 8px 16px; border: 1px solid white; display: flex; align-items: center;">
-                        <span style="font-size: 1rem; margin-right: 5px;">🏠</span> Strona główna
-                    </a>
-                    <a href="/Borrowings/AdminPanel" class="btn" style="background-color: rgba(255, 255, 255, 0.2); color: white; border-radius:25px; font-weight:600; padding: 8px 16px; border: 1px solid white; display: flex; align-items: center;">
-                        <span style="font-size: 1rem; margin-right: 5px;">📋</span> Wypożyczenia
-                    </a>
-                </nav>
-                <form asp-controller="Account" asp-action="Logout" method="post">
-                    <button type="submit" class="btn-logout" style="background: rgba(255, 255, 255, 0.2); display: flex; align-items: center;">
-                        <span style="font-size: 1rem; margin-right: 5px;">🚪</span> Wyloguj się
-                    </button>
-                </form>
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="AdminHome" style="font-weight: 700; color: #fff; display: flex; align-items: center;">
+                    <span style="font-size: 1.5rem; margin-right: 8px;">⚙️</span> Panel administratora
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Home" asp-action="AdminHome" style="color: #fff; font-weight: 600; display: flex; align-items: center;">
+                                <span style="font-size: 1rem; margin-right: 5px;">🏠</span> Strona główna
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Books" asp-action="Index" style="color: #fff; font-weight: 600; display: flex; align-items: center;">
+                                <span style="font-size: 1rem; margin-right: 5px;">📚</span> Książki
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Borrowings" asp-action="AdminPanel" style="color: #fff; font-weight: 600; display: flex; align-items: center;">
+                                <span style="font-size: 1rem; margin-right: 5px;">📋</span> Wypożyczenia
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Books" asp-action="GoogleBooksSearch" style="color: #fff; font-weight: 600; display: flex; align-items: center;">
+                                <span style="font-size: 1rem; margin-right: 5px;">🔍</span> Google Books
+                            </a>
+                        </li>
+                    </ul>
+                    <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })" method="post">
+                        <button type="submit" class="btn-logout" style="display: flex; align-items: center; background: rgba(255, 255, 255, 0.2); border: 1px solid white; border-radius: 25px; padding: 8px 16px; color: #fff; font-weight: 600;">
+                            <span style="font-size: 1rem; margin-right: 5px;">🚪</span> Wyloguj się
+                        </button>
+                    </form>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <div class="container mt-4">
         <div class="admin-panel" style="border: 2px dashed #5aa6ff; border-radius: 20px;">

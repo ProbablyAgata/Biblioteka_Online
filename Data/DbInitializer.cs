@@ -32,9 +32,9 @@ namespace BibliotekaOnline.Data
             if (!context.Books.Any())
             {
                 context.Books.AddRange(
-                    new Book { Title = "Wiedźmin", Author = "Andrzej Sapkowski", Description = "Saga fantasy.", TotalCopies = 3 },
-                    new Book { Title = "Lalka", Author = "Bolesław Prus", Description = "Powieść realistyczna.", TotalCopies = 2 },
-                    new Book { Title = "Pan Tadeusz", Author = "Adam Mickiewicz", Description = "Epopeja narodowa.", TotalCopies = 1 }
+                    new Book { Title = "Wiedźmin 3. Krew elfów", Author = "Andrzej Sapkowski", Description = "Saga fantasy.", TotalCopies = 3, Publisher = "SuperNova", Categories = "Fantasy", Language = "Polski", PublishedDate = "2014", ISBN = "978-83-7578-065-9", PageCount = 340 },
+                    new Book { Title = "Lalka", Author = "Bolesław Prus", Description = "Powieść realistyczna.", TotalCopies = 2, Publisher = "Siedmioróg", Categories = "Powieść", Language = "Polski", PublishedDate = "2017", ISBN = "978-83-7791-604-9", PageCount = 682},
+                    new Book { Title = "Pan Tadeusz", Author = "Adam Mickiewicz", Description = "Epopeja narodowa.", TotalCopies = 1, Publisher = "Greg", Categories = "Poemat epicki", Language = "Polski", PublishedDate = "2003", ISBN = "83-7327-228-3", PageCount = 335 }
                 );
                 await context.SaveChangesAsync();
             }

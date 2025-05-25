@@ -1,0 +1,90 @@
+@model BibliotekaOnline.Models.Book
+
+@{
+    ViewData["Title"] = "Dodaj książkę";
+}
+
+<div class="container">
+    <h1>Dodaj nową książkę</h1>
+    
+    <div class="card">
+        <div class="card-body">
+            <form asp-action="Create" method="post">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="Title" class="form-label">Tytuł</label>
+                            <input asp-for="Title" class="form-control" required />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Author" class="form-label">Autor</label>
+                            <input asp-for="Author" class="form-control" required />
+                            <span asp-validation-for="Author" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label">Opis</label>
+                            <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="TotalCopies" class="form-label">Liczba kopii</label>
+                            <input asp-for="TotalCopies" class="form-control" type="number" min="1" required />
+                            <span asp-validation-for="TotalCopies" class="text-danger"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label asp-for="ISBN" class="form-label">ISBN</label>
+                            <input asp-for="ISBN" class="form-control" />
+                            <span asp-validation-for="ISBN" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Publisher" class="form-label">Wydawca</label>
+                            <input asp-for="Publisher" class="form-control" />
+                            <span asp-validation-for="Publisher" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="PublishedDate" class="form-label">Data wydania</label>
+                            <input asp-for="PublishedDate" class="form-control" />
+                            <span asp-validation-for="PublishedDate" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="PageCount" class="form-label">Liczba stron</label>
+                            <input asp-for="PageCount" class="form-control" type="number" min="0" />
+                            <span asp-validation-for="PageCount" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Language" class="form-label">Język</label>
+                            <input asp-for="Language" class="form-control" />
+                            <span asp-validation-for="Language" class="text-danger"></span>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label asp-for="Categories" class="form-label">Kategorie</label>
+                            <input asp-for="Categories" class="form-control" />
+                            <span asp-validation-for="Categories" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="d-flex justify-content-between mt-4">
+                    <a asp-action="Index" class="btn btn-secondary">Wróć do listy</a>
+                    <button type="submit" class="btn btn-primary">Dodaj książkę</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
