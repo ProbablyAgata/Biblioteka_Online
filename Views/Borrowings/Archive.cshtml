@@ -78,7 +78,7 @@
                                 @if (borrowing.ReturnDate > borrowing.DueDate && borrowing.DueDate > borrowing.BorrowDate)
                                 {
                                     var delayDays = (borrowing.ReturnDate.Value - borrowing.DueDate).Days;
-                                    @if (delayDays > 0 && delayDays < 1000) // Reasonable delay range
+                                    @if (delayDays > 0 && delayDays < 1000) 
                                     {
                                         <br><small class="text-warning">⚠️ Opóźnienie: @delayDays dni</small>
                                     }

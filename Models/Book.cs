@@ -18,10 +18,9 @@ namespace BibliotekaOnline.Models
         public string Description { get; set; } = string.Empty;
 
         [Required]
-        [Range(1, int.MaxValue, ErrorMessage = "Total copies must be at least 1")]
+        [Range(1, int.MaxValue, ErrorMessage = "Ilość egzemplarzy musi być co najmniej 1")]
         public int TotalCopies { get; set; }
 
-        // Google Books specific fields
         public string GoogleBookId { get; set; } = string.Empty;
         public string ISBN { get; set; } = string.Empty;
         public string Publisher { get; set; } = string.Empty;
