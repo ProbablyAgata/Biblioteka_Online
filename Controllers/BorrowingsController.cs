@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using BibliotekaOnline.Data;
 using BibliotekaOnline.Models;
 using System.Security.Claims;
+using Microsoft.Extensions.Logging;
 
 namespace BibliotekaOnline.Controllers
 {
@@ -11,10 +12,12 @@ namespace BibliotekaOnline.Controllers
     public class BorrowingsController : Controller
     {
         private readonly AppDbContext _context;
+        private readonly ILogger<BorrowingsController> _logger;
 
-        public BorrowingsController(AppDbContext context)
+        public BorrowingsController(AppDbContext context, ILogger<BorrowingsController> logger)
         {
             _context = context;
+            _logger = logger;
         }
 
         public async Task<IActionResult> Index()
@@ -63,15 +66,19 @@ namespace BibliotekaOnline.Controllers
             var book = await _context.Books.FindAsync(bookId);
             if (book == null)
             {
-                TempData["Error"] = "Książka nie została znaleziona.";
-                return RedirectToAction("Index", "Books");
+                return NotFound();
+            }
+
+            if (book.TotalCopies <= 0)
+            {
+                TempData["Error"] = "Przepraszamy, ale wszystkie egzemplarze tej książki są obecnie wypożyczone.";
+                return RedirectToAction("Details", "Books", new { id = bookId });
             }
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            
             var existingBorrowing = await _context.Borrowings
                 .FirstOrDefaultAsync(b => b.UserId == userId && b.BookId == bookId && !b.Returned);
-                
+
             if (existingBorrowing != null)
             {
                 TempData["Error"] = "Już wypożyczyłeś tę książkę.";
@@ -89,8 +96,18 @@ namespace BibliotekaOnline.Controllers
             var book = await _context.Books.FindAsync(bookId);
             if (book == null)
             {
+                _logger.LogWarning($"Book with ID {bookId} not found");
                 TempData["Error"] = "Książka nie została znaleziona.";
                 return RedirectToAction("Index", "Books");
+            }
+
+            _logger.LogInformation($"POST: Attempting to borrow book {book.Title} (ID: {book.Id}). Current copies: {book.TotalCopies}");
+
+            if (book.TotalCopies <= 0)
+            {
+                _logger.LogWarning($"POST: Cannot borrow book {book.Title} - no copies available");
+                TempData["Error"] = "Przepraszamy, ale wszystkie egzemplarze tej książki są obecnie wypożyczone.";
+                return RedirectToAction("Details", "Books", new { id = bookId });
             }
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -100,6 +117,7 @@ namespace BibliotekaOnline.Controllers
                 
             if (existingBorrowing != null)
             {
+                _logger.LogWarning($"POST: User {userId} already has an active borrowing for book {book.Title}");
                 TempData["Error"] = "Już wypożyczyłeś tę książkę.";
                 return RedirectToAction("Details", "Books", new { id = bookId });
             }
@@ -113,6 +131,9 @@ namespace BibliotekaOnline.Controllers
                 Returned = false
             };
 
+            book.TotalCopies--;
+            _logger.LogInformation($"POST: Decreasing copies for book {book.Title}. New count: {book.TotalCopies}");
+            
             _context.Borrowings.Add(borrowing);
             await _context.SaveChangesAsync();
             
@@ -131,10 +152,32 @@ namespace BibliotekaOnline.Controllers
                 return View(borrowing);
             }
 
+            var book = await _context.Books.FindAsync(borrowing.BookId);
+            if (book == null)
+            {
+                TempData["Error"] = "Książka nie została znaleziona.";
+                ViewBag.Users = _context.Users.ToList();
+                ViewBag.Books = _context.Books.ToList();
+                return View(borrowing);
+            }
+
+            if (book.TotalCopies <= 0)
+            {
+                TempData["Error"] = "Przepraszamy, ale wszystkie egzemplarze tej książki są obecnie wypożyczone.";
+                ViewBag.Users = _context.Users.ToList();
+                ViewBag.Books = _context.Books.ToList();
+                return View(borrowing);
+            }
+
             borrowing.BorrowDate = DateTime.Now;
             borrowing.DueDate = DateTime.Now.AddDays(14);
+            borrowing.Returned = false;
+
+            book.TotalCopies--;
             _context.Borrowings.Add(borrowing);
             await _context.SaveChangesAsync();
+
+            TempData["Success"] = $"Pomyślnie utworzono wypożyczenie książki '{book.Title}'.";
             return RedirectToAction(nameof(AdminPanel));
         }
 
@@ -184,7 +227,9 @@ namespace BibliotekaOnline.Controllers
         [Authorize(Roles = "Admin")]
         public async Task<IActionResult> MarkReturned(int id)
         {
-            var borrowing = await _context.Borrowings.FindAsync(id);
+            var borrowing = await _context.Borrowings
+                .Include(b => b.Book)
+                .FirstOrDefaultAsync(b => b.Id == id);
             
             if (borrowing == null)
             {
@@ -199,6 +244,11 @@ namespace BibliotekaOnline.Controllers
             
             borrowing.Returned = true;
             borrowing.ReturnDate = returnDate;
+            
+            if (borrowing.Book != null)
+            {
+                borrowing.Book.TotalCopies++;
+            }
             
             await _context.SaveChangesAsync();
             

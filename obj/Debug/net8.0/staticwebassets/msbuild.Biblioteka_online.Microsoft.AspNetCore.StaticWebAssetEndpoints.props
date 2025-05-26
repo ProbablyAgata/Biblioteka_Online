@@ -1,16 +1,16 @@
 ﻿<Project>
   <ItemGroup>
     <StaticWebAssetEndpoint Include="_content/Biblioteka_online/Biblioteka_online.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Biblioteka_online.jajugxsi6m.bundle.scp.css'))</AssetFile>
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Biblioteka_online.n2sq0i28es.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 25 May 2025 09:34:06 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"941"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 07:48:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Biblioteka_online/Biblioteka_online.jajugxsi6m.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Biblioteka_online.jajugxsi6m.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Biblioteka_online/Biblioteka_online.n2sq0i28es.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Biblioteka_online.n2sq0i28es.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"jajugxsi6m"},{"Name":"integrity","Value":"sha256-1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM="},{"Name":"label","Value":"_content/Biblioteka_online/Biblioteka_online.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1135"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00221c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 25 May 2025 09:34:06 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n2sq0i28es"},{"Name":"integrity","Value":"sha256-YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ="},{"Name":"label","Value":"_content/Biblioteka_online/Biblioteka_online.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"941"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=\u0022"},{"Name":"Last-Modified","Value":"Mon, 26 May 2025 07:48:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Biblioteka_online/css/modern-style.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\modern-style.css'))</AssetFile>

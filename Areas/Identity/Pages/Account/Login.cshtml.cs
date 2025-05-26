@@ -73,7 +73,7 @@ namespace BibliotekaOnline.Areas.Identity.Pages.Account
                     {
                         if (await _userManager.IsInRoleAsync(user, "Admin"))
                         {
-                            return RedirectToAction("AdminHome", "Home");
+                            return RedirectToAction("AdminPanel", "Borrowings");
                         }
                         else
                         {

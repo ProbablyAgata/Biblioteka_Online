@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OYhybG/5rJb4kSDJWSZQrilCDEb8JR4os1qBR7iCd7o=",
+  "Hash": "jYTLfJI+IeaTeJNMLkEhbhAMl+XbGdjSfHrVnwh3rrI=",
   "Source": "Biblioteka_online",
   "BasePath": "_content/Biblioteka_online",
   "Mode": "Default",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "jajugxsi6m",
-      "Integrity": "1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=",
+      "Fingerprint": "n2sq0i28es",
+      "Integrity": "YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css"
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "jajugxsi6m",
-      "Integrity": "1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=",
+      "Fingerprint": "n2sq0i28es",
+      "Integrity": "YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css"
@@ -2675,7 +2675,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1135"
+          "Value": "941"
         },
         {
           "Name": "Content-Type",
@@ -2683,11 +2683,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=\""
+          "Value": "\"YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 25 May 2025 09:34:06 GMT"
+          "Value": "Mon, 26 May 2025 07:48:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2697,12 +2697,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM="
+          "Value": "sha256-YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ="
         }
       ]
     },
     {
-      "Route": "Biblioteka_online.jajugxsi6m.bundle.scp.css",
+      "Route": "Biblioteka_online.n2sq0i28es.bundle.scp.css",
       "AssetFile": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Biblioteka_online.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2712,7 +2712,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1135"
+          "Value": "941"
         },
         {
           "Name": "Content-Type",
@@ -2720,11 +2720,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=\""
+          "Value": "\"YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 25 May 2025 09:34:06 GMT"
+          "Value": "Mon, 26 May 2025 07:48:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2734,7 +2734,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jajugxsi6m"
+          "Value": "n2sq0i28es"
         },
         {
           "Name": "label",
@@ -2742,12 +2742,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM="
+          "Value": "sha256-YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ="
         }
       ]
     },
     {
-      "Route": "Biblioteka_online.jajugxsi6m.styles.css",
+      "Route": "Biblioteka_online.n2sq0i28es.styles.css",
       "AssetFile": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Biblioteka_online.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2757,7 +2757,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1135"
+          "Value": "941"
         },
         {
           "Name": "Content-Type",
@@ -2765,11 +2765,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=\""
+          "Value": "\"YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 25 May 2025 09:34:06 GMT"
+          "Value": "Mon, 26 May 2025 07:48:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2779,7 +2779,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jajugxsi6m"
+          "Value": "n2sq0i28es"
         },
         {
           "Name": "label",
@@ -2787,7 +2787,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM="
+          "Value": "sha256-YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ="
         }
       ]
     },
@@ -2802,7 +2802,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1135"
+          "Value": "941"
         },
         {
           "Name": "Content-Type",
@@ -2810,11 +2810,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=\""
+          "Value": "\"YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 25 May 2025 09:34:06 GMT"
+          "Value": "Mon, 26 May 2025 07:48:32 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2824,7 +2824,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM="
+          "Value": "sha256-YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ="
         }
       ]
     },

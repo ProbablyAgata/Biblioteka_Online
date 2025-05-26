@@ -3,7 +3,7 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
-      "Route": "Biblioteka_online.jajugxsi6m.styles.css",
+      "Route": "Biblioteka_online.n2sq0i28es.styles.css",
       "AssetFile": "Biblioteka_online.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -17,7 +17,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1135"
+          "Value": "941"
         },
         {
           "Name": "Content-Type",
@@ -25,21 +25,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=\""
+          "Value": "\"YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 25 May 2025 09:34:06 GMT"
+          "Value": "Mon, 26 May 2025 07:48:32 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "jajugxsi6m"
+          "Value": "n2sq0i28es"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM="
+          "Value": "sha256-YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ="
         },
         {
           "Name": "label",
@@ -62,7 +62,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1135"
+          "Value": "941"
         },
         {
           "Name": "Content-Type",
@@ -70,17 +70,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM=\""
+          "Value": "\"YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 25 May 2025 09:34:06 GMT"
+          "Value": "Mon, 26 May 2025 07:48:32 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1c6c8YtbSp6ozKBv3yNtGF0nui50fgaFBaXYQpHpjpM="
+          "Value": "sha256-YUePoyErjeO8WXWtTZqKaFK01SL2vetw7wPtgUWXQPQ="
         }
       ]
     },
