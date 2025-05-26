@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -18,17 +17,13 @@ builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfi
     .AddDefaultTokenProviders()
     .AddDefaultUI();
 
-// Register HttpClient and GoogleBooksService
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<GoogleBooksService>();
 
-// Register Email Service
 builder.Services.AddTransient<IEmailSender, EmailSender>();
 
-// Configure Identity options
 builder.Services.Configure<IdentityOptions>(options =>
 {
-    // Password settings
     options.Password.RequireDigit = true;
     options.Password.RequireLowercase = true;
     options.Password.RequireNonAlphanumeric = false;
@@ -36,12 +31,10 @@ builder.Services.Configure<IdentityOptions>(options =>
     options.Password.RequiredLength = 6;
     options.Password.RequiredUniqueChars = 1;
 
-    // Lockout settings
     options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
     options.Lockout.MaxFailedAccessAttempts = 5;
     options.Lockout.AllowedForNewUsers = true;
 
-    // User settings
     options.User.AllowedUserNameCharacters =
         "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
     options.User.RequireUniqueEmail = true;

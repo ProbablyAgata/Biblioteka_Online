@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Biblioteka_online")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca31d789b43c85489fda918a5a29f5a617b1add6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e13cee8e69ac42db402eb3df473a5164814421b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("Biblioteka_online")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Biblioteka_online")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
