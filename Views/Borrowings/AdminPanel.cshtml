@@ -98,6 +98,19 @@
                                     </a>
                                     <br>
                                     <small class="text-muted">@borrowing.Book?.Author</small>
+                                    <br>
+                                    @if (borrowing.Book?.TotalCopies > 0)
+                                    {
+                                        <span class="badge bg-success">
+                                            <i class="bi bi-check-circle"></i> Dostępne: @borrowing.Book.TotalCopies
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger">
+                                            <i class="bi bi-x-circle"></i> Niedostępne
+                                        </span>
+                                    }
                                 </div>
                             </div>
                         </td>

@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Views\\Borrowings\\AdminPanel.cshtml",
               "ToolTip": "C:\\Users\\laura\\Desktop\\Biblioteka-PZ\\Biblioteka_Online\\Views\\Borrowings\\AdminPanel.cshtml",
               "RelativeToolTip": "Views\\Borrowings\\AdminPanel.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-25T10:07:01.722Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "Data\\DbInitializer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-25T09:39:44.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T09:39:44.011Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Views\\Books\\Details.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAACQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-25T09:35:55.584Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-25T09:35:55.584Z"
             }
           ]
         }

@@ -89,18 +89,36 @@
                         </td>
                         <td>@book.Author</td>
                         <td>
-                            <span class="badge modern-btn modern-btn-small">
-                                <span class="emoji-icon-small">📦</span>@book.TotalCopies szt.
-                            </span>
+                            @if (book.TotalCopies > 0)
+                            {
+                                <span class="badge bg-success">
+                                    <i class="bi bi-check-circle"></i> Dostępne: @book.TotalCopies
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-danger">
+                                    <i class="bi bi-x-circle"></i> Niedostępne
+                                </span>
+                            }
                         </td>
                         <td>
                             <div class="d-flex gap-1 flex-wrap">
                                 <a asp-action="Details" asp-route-id="@book.Id" class="modern-btn modern-btn-small modern-btn-outline" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">
                                     <span class="emoji-icon-small">🔍</span>Szczegóły
                                 </a>
-                                <a asp-controller="Borrowings" asp-action="Borrow" asp-route-bookId="@book.Id" class="modern-btn modern-btn-small modern-btn-success" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">
-                                    <span class="emoji-icon-small">📚</span>Wypożycz
-                                </a>
+                                @if (book.TotalCopies > 0)
+                                {
+                                    <a asp-controller="Borrowings" asp-action="Borrow" asp-route-bookId="@book.Id" class="modern-btn modern-btn-small modern-btn-success" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;">
+                                        <span class="emoji-icon-small">📚</span>Wypożycz
+                                    </a>
+                                }
+                                else
+                                {
+                                    <button class="modern-btn modern-btn-small modern-btn-secondary" style="font-size: 0.75rem; padding: 0.25rem 0.5rem;" disabled>
+                                        <span class="emoji-icon-small">📚</span>Niedostępne
+                                    </button>
+                                }
                             </div>
                         </td>
                     </tr>
