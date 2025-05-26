@@ -38,7 +38,6 @@ namespace BibliotekaOnline.Controllers
                 .Take(10)
                 .ToListAsync();
 
-            // Get statistics for the admin dashboard
             ViewBag.ActiveBorrowings = await _context.Borrowings.CountAsync(b => !b.Returned);
             ViewBag.TotalBooks = await _context.Books.CountAsync();
 
@@ -70,7 +69,6 @@ namespace BibliotekaOnline.Controllers
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             
-            // Check if user already has this book borrowed
             var existingBorrowing = await _context.Borrowings
                 .FirstOrDefaultAsync(b => b.UserId == userId && b.BookId == bookId && !b.Returned);
                 
@@ -97,7 +95,6 @@ namespace BibliotekaOnline.Controllers
 
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             
-            // Check if user already has this book borrowed
             var existingBorrowing = await _context.Borrowings
                 .FirstOrDefaultAsync(b => b.UserId == userId && b.BookId == bookId && !b.Returned);
                 
@@ -135,7 +132,7 @@ namespace BibliotekaOnline.Controllers
             }
 
             borrowing.BorrowDate = DateTime.Now;
-            borrowing.DueDate = DateTime.Now.AddDays(14); // 2 weeks borrowing period
+            borrowing.DueDate = DateTime.Now.AddDays(14);
             _context.Borrowings.Add(borrowing);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(AdminPanel));
@@ -160,7 +157,6 @@ namespace BibliotekaOnline.Controllers
         {
             if (id == null)
             {
-                // If no ID is specified, show a list of active borrowings
                 var activeBorrowings = await _context.Borrowings
                     .Include(b => b.Book)
                     .Include(b => b.User)
@@ -195,7 +191,6 @@ namespace BibliotekaOnline.Controllers
                 return NotFound();
             }
             
-            // Ensure return date cannot be before borrow date
             var returnDate = DateTime.Now;
             if (returnDate < borrowing.BorrowDate)
             {
@@ -296,7 +291,6 @@ namespace BibliotekaOnline.Controllers
                 return RedirectToAction(nameof(Index));
             }
             
-            // Ensure return date cannot be before borrow date
             var returnDate = DateTime.Now;
             if (returnDate < borrowing.BorrowDate)
             {
@@ -328,7 +322,6 @@ namespace BibliotekaOnline.Controllers
                 return RedirectToAction("UserHome", "Home");
             }
 
-            // Extend due date by 7 days
             borrowing.DueDate = borrowing.DueDate.AddDays(7);
             
             await _context.SaveChangesAsync();

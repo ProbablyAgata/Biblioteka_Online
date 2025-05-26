@@ -80,14 +80,13 @@ namespace BibliotekaOnline.Controllers
         {
             if (string.IsNullOrEmpty(id))
             {
-                return BadRequest("Book ID is required");
+                return BadRequest("ID książki jest wymagane");
             }
 
-            // Check if book already exists
             var existingBook = await _context.Books.FirstOrDefaultAsync(b => b.GoogleBookId == id);
             if (existingBook != null)
             {
-                TempData["Error"] = "This book is already in the library";
+                TempData["Error"] = "Ta książka już istnieje w bibliotece";
                 return RedirectToAction(nameof(Index));
             }
 
@@ -104,7 +103,7 @@ namespace BibliotekaOnline.Controllers
                     ? string.Join(", ", googleBook.VolumeInfo.Authors) 
                     : "Nieznany autor",
                 Description = googleBook.VolumeInfo.Description ?? string.Empty,
-                TotalCopies = 1, // Default value
+                TotalCopies = 1,
                 GoogleBookId = googleBook.Id,
                 ISBN = googleBook.VolumeInfo.IndustryIdentifiers?.FirstOrDefault()?.Identifier ?? string.Empty,
                 Publisher = googleBook.VolumeInfo.Publisher ?? string.Empty,
@@ -125,7 +124,6 @@ namespace BibliotekaOnline.Controllers
         {
             try
             {
-                // Ensure required fields are not empty
                 if (string.IsNullOrWhiteSpace(book.Title))
                 {
                     book.Title = "Brak tytułu";
@@ -136,7 +134,6 @@ namespace BibliotekaOnline.Controllers
                     book.Author = "Nieznany autor";
                 }
 
-                // Check if book with same GoogleBookId already exists
                 if (!string.IsNullOrEmpty(book.GoogleBookId))
                 {
                     var existingBook = await _context.Books.FirstOrDefaultAsync(b => b.GoogleBookId == book.GoogleBookId);

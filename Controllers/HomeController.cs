@@ -21,15 +21,12 @@ namespace BibliotekaOnline.Controllers
 
         public IActionResult Index()
         {
-            // Just show the main page, no redirects
-            // This allows both logged in and anonymous users to see the welcome page
             return View();
         }
 
         [Authorize]
         public IActionResult Catalog()
         {
-            // Redirect to the Books controller Index action
             return RedirectToAction("Index", "Books");
         }
 
@@ -67,7 +64,6 @@ namespace BibliotekaOnline.Controllers
             {
                 var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
                 
-                // Initialize with empty collections by default
                 ViewBag.ActiveBorrowings = new List<Borrowing>();
                 ViewBag.RecentlyReturned = new List<Borrowing>();
                 
@@ -92,7 +88,6 @@ namespace BibliotekaOnline.Controllers
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error in UserHome action");
-                // Even on error, ensure ViewBag properties are not null
                 ViewBag.ActiveBorrowings = ViewBag.ActiveBorrowings ?? new List<Borrowing>();
                 ViewBag.RecentlyReturned = ViewBag.RecentlyReturned ?? new List<Borrowing>();
             }

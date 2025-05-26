@@ -20,14 +20,12 @@ namespace BibliotekaOnline.Controllers
         [HttpGet]
         public IActionResult Login(string? returnUrl = null)
         {
-            // Redirect to the Identity login page
             return RedirectToPage("/Account/Login", new { area = "Identity", returnUrl });
         }
 
         [HttpGet]
         public IActionResult Register()
         {
-            // Redirect to the Identity register page
             return RedirectToPage("/Account/Register", new { area = "Identity" });
         }
 
